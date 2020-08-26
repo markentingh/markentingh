@@ -1,4 +1,3 @@
-## Hey there,
 ### I'm Mark Entingh, a software engineer and one man army on the front-lines of open source.
 
 I'm currently working on various projects of my own, for the sake of my own sanity. :blush:

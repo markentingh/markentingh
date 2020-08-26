@@ -13,6 +13,8 @@ I'm crrently working on various projects of my own, for the sake of my own sanit
 
 * I use [Selector](https://www.github.com/Websilk/Selector) as a jQuery replacement that weighs in at under 5kb (gzip + minified). I wrote this library to help me fully understand the limitations of JavaScript and so that I could use something smaller than jQuery and Zepto in my web projects.
 
+* I use [Tapestry](https://www.github.com/Websilk/Tapestry) as a LESS/CSS grid & UI framework. It's really easy to build responsive grids of any kind (including odd-numbered column grids of 5, 7, and 9), has a really robust and minimal set of UI elements, and uses LESS to define colors for UI elements and themes.
+
 There are many more projects that I'm working on at the moment, even a few that are private because I plan on monitizing them so I don't need to rely on a day job any longer. Eventually I'll talk about those projects once they're released to the public. For now, if you'd like to get to know me, you can find me on **Discord** @ polymath#3455.
 
 Thank you for taking the time to read all this stuff and I hope we can talk in the near future if you're interested in picking my brain.

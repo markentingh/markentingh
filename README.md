@@ -1,7 +1,7 @@
 ## Hey there,
 ### I'm Mark Entingh, a software engineer and one man army on the front-lines of open source.
 
-I'm crrently working on various projects of my own, for the sake of my own sanity. :blush:
+I'm currently working on various projects of my own, for the sake of my own sanity. :blush:
 
 * I use [Kandu](https://www.github.com/Datasilk/Kandu) every day to keep track of all the things. Looks a lot like Trello, doesn't it? That's because I love Trello, but I'm selfish and wanted to keep it for myself, so I built my own Trello from scratch and even made it better in some ways.
 

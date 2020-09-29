@@ -1,0 +1,127 @@
+@import url(http://fonts.googleapis.com/css?family=Jaldi);
+
+/* reset */
+body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, code, img, strong, b, u, i, ol, ul, li,
+fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav, section, summary
+{margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline;}
+
+/* body */
+body{color:#272727; background-color:#ffffff;}
+
+/* fonts */
+h1, h2, h3, h4, h5, h6{font-family: 'Jaldi', sans-serif; line-height:1.25}
+h1{font-size: 72px;}
+h2{font-size: 56px;}
+h3{font-size: 48px;}
+h4{font-size: 36px;}
+h5{font-size: 28px;}
+h6{font-size: 20px;}
+
+a:link{color:#1db09d; text-decoration:none;}
+a:hover{color:#1db09d; text-decoration:underline;}
+a:active{color:#00afa5; }
+a:visited{color:#0098ca; }
+
+/* content */
+.content{position:relative; width:100%; max-width:1400px; margin:0px auto;}
+.group:after{content:''; display:table; clear:both;}
+.content > .title{width:100%; text-align:center; padding:50px 0px 20px 0px;}
+
+/* header */
+header{top:0px; height:88px; position:fixed; z-index:1000; background-color:#fff; width:100%;}
+header .logo{float:left; padding-top:25px;}
+header .email{float:right; padding-top:30px;}
+header .email img{display:inline-block; margin-bottom:-5px; padding-right:10px; width:34px; height:23px;}
+
+/* intro */
+.intro{margin-top:88px; position:relative; width:100%; height:500px; background-image:url(images/bg.jpg); background-repeat:repeat-y; background-position:0px -50px;}
+.intro img{position:absolute; bottom:0px; left:20%;}
+.forhire{position:absolute; top:100px; right:0px; color:#ffffff; text-transform:uppercase; border:3px solid #ffffff; padding:40px 45px; text-align:center;}
+
+/* skills */
+.skills{padding:0px 0px 0px 0px;}
+.skills .group{max-width: 1050px; padding: 10px 0px; font-family: 'Jaldi', sans-serif; font-size: 22px; margin: 0px auto;}
+.skills .clock{float:left; width:32px; padding:2px 5px 0px 5px;}
+.skills .clock img{width:24px; height:24px;}
+.skills .years{float:left; width:115px; padding:1px 5px 0px 5px; color:#a5a5a5;}
+.skills .arrow{float:left; width:30px; padding:5px 0px 0px 0px;}
+.skills .arrow img{width:12px; height:20px;}
+.skills .summary{float:left; padding:0px 10px; width:calc(100% - 260px);}
+.skills .icon{float:left; width:50px; text-align:center;}
+.skills .tag{float:left; background-color:#1db09d; color:#fff; font-size:14px; padding:5px 12px; border-radius:5px;}
+.skills .list{clear:both; padding:10px 40px 30px 0;}
+.skills .list a:link,
+.skills .list a:visited{text-decoration:none; color:#272727;}
+.skills .list a:hover,
+.skills .list a:active{color:#B400E0;}
+.skills .col{float:left; line-height:1.6;}
+.skills span.small{font-size:17px;}
+
+.divider{width:100%; height:2px; background-color:#eaeaea; font-size:0px; margin:0 0 20px 0;}
+
+/* rennder */
+.rennder{color:#ffffff; position:relative; width:100%; padding:20px 0px; background-image:url(images/bg.jpg); background-repeat:repeat-y;}
+.rennder .logo{width:100%; text-align:center;}
+.rennder .logo img{display:inline-block; padding:30px 0px 10px 0px;}
+.rennder .link{padding:10px 0px 0px 0px;}
+.rennder .logo a{display:inline-block; font-size:20px;}
+.rennder a{font-family: 'Jaldi', sans-serif;}
+.rennder a:link{color:#c0ff00;}
+.rennder a:hover{color:#c0ff00;}
+.rennder a:active{color:#c0ff00;}
+.rennder a:visited{color:#c0ff00;}
+.rennder .group{max-width: 1050px; padding: 10px 0px; font-family: 'Jaldi', sans-serif; font-size: 22px; margin: 0px auto;}
+.rennder .clock{float:left; width:32px; padding:8px 5px 0px 5px;}
+.rennder .years{float:left; width:115px; padding:1px 5px 0px 5px; color:#ffffff;}
+.rennder .arrow{float:left; width:30px; padding:5px 0px 0px 0px;}
+.rennder .summary{float:left; padding:0px 10px; width:calc(100% - 310px);}
+.rennder .icon{float:left; width:50px; text-align:center;}
+
+/* bio */
+.bio{font-family: 'Jaldi', sans-serif; font-size:24px; padding:50px 0px 50px 0px}
+.bio .content{max-width:1030px;}
+.bio p{padding-bottom:30px;}
+
+/* contact */
+.contact{color:#ffffff; position:relative; width:100%; padding:40px 0px; background-image:url(images/bg.jpg); background-repeat:repeat-y;}
+.contact .content{text-align:center;}
+.contact h4{padding-bottom:10px;}
+.contact a{font-family: 'Jaldi', sans-serif; font-size:32px;}
+.contact a:link{color:#c0ff00;}
+.contact a:hover{color:#c0ff00;}
+.contact a:active{color:#c0ff00;}
+.contact a:visited{color:#c0ff00;}
+
+.contact .note{font-family: 'Jaldi', sans-serif; width:calc(100% - 100px); text-align:center; font-size:24px; color:rgba(255,255,255,0.5); padding:50px;}
+
+/* media queries */
+@media (max-width: 1480px){
+  body{overflow-x:hidden;}
+  .content{width:calc(100% - 40px); padding:0px 20px;}
+  .forhire{right:20px;}
+}
+
+@media (max-width: 1200px){
+  .intro img{left:0px;}
+  .forhire{top:170px; }
+}
+
+@media (max-width: 950px){
+  .intro img{left:10%;}
+  .forhire{padding:20px; top:240px; right:20px;}
+  .forhire h1{font-size:60px;}
+  .forhire h4{font-size:26px;}
+}
+
+@media (max-width: 850px){
+  .forhire{top:300px; left:10%; right:10%;}
+  .skills .icon{display:none;}
+  .skills .summary{width:calc(100% - 220px);} 
+  .rennder .summary{width:calc(100% - 220px);} 
+}
+
+@media (max-width: 700px){
+  .skills .summary, .rennder .summary{width:calc(100% - 30px); padding-bottom:30px;} 
+  .skills .arrow, .rennder .arrow{display:none;}
+}

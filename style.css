@@ -1,0 +1,1240 @@
+/* fonts */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'), url(/fonts/opensans/opensans-lightitalic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(/fonts/opensans/opensans-italic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(/fonts/opensans/opensans-bolditalic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(/fonts/opensans/opensans-light.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(/fonts/opensans/opensans-regular.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(/fonts/opensans/opensans-bold.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* reset */
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+img,
+strong,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* body */
+body {
+  font-weight: 400;
+  color: #272727;
+  background-color: #ffffff;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+input,
+select,
+textarea {
+  font-family: Open Sans, Arial, Helvetica, sans;
+}
+/* fonts */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Jaldi', sans-serif;
+  line-height: 1.25;
+}
+h1 {
+  font-size: 82px;
+}
+h2 {
+  font-size: 56px;
+}
+h3 {
+  font-size: 48px;
+}
+h4 {
+  font-size: 36px;
+}
+h5 {
+  font-size: 24px;
+}
+h6 {
+  font-size: 20px;
+}
+a:link {
+  color: #6666ff;
+  text-decoration: none;
+}
+a:hover {
+  color: #894aff;
+  text-decoration: underline;
+}
+a:active {
+  color: #894aff;
+}
+a:visited {
+  color: #6666ff;
+}
+/* content */
+.content {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0px auto;
+}
+.title {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0px 20px 0px;
+}
+/* header */
+header {
+  position: fixed;
+  top: 0px;
+  height: 500px;
+  z-index: 1000;
+  width: 100%;
+}
+header .intro {
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+header .content {
+  display: table-cell;
+  vertical-align: middle;
+}
+header .content h1 {
+  padding-bottom: 10px;
+}
+header .content h4 {
+  padding-bottom: 50px;
+}
+header .content h6 {
+  opacity: 0.6;
+}
+header .profile-pic {
+  position: absolute;
+  bottom: -85px;
+  width: 100%;
+  text-align: center;
+  z-index: 1001;
+}
+header .profile-pic img {
+  width: 150px;
+  margin: 0 auto;
+}
+/* skills */
+.skills {
+  padding-top: 550px;
+}
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: #eaeaea;
+  font-size: 0px;
+  margin: 0 0 20px 0;
+}
+/* bio */
+.bio {
+  font-family: 'Jaldi', sans-serif;
+  font-size: 24px;
+  padding: 50px 0px 50px 0px;
+}
+.bio .content {
+  max-width: 1030px;
+}
+.bio p {
+  padding-bottom: 30px;
+}
+/* contact */
+.contact {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  color: #ffffff;
+}
+.contact .content {
+  position: absolute;
+  z-index: 900;
+  top: 25;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+.contact .content h5 {
+  padding-bottom: 10px;
+}
+.contact .content a {
+  font-size: 24px;
+}
+.contact .content a:link {
+  color: #fff;
+}
+.contact .content a:hover {
+  color: #d0e3ff;
+}
+.contact .content a:active {
+  color: #d0e3ff;
+}
+.contact .content a:visited {
+  color: #fff;
+}
+/* graph */
+.graph {
+  margin-bottom: 50px;
+  /* graph for Visual Studio (VS) */
+  /* graph for Visual Studio Code */
+  /* graph for Webforms */
+  /* graph for MVC */
+  /* graph for LINQ */
+  /* graph for C# */
+  /* graph for VB.net */
+  /* graph for ASP.net */
+  /* graph for Visual Basic (VB) */
+  /* graph for SQL Server */
+  /* graph for PHP */
+  /* graph for MySql */
+  /* graph for Dapper */
+  /* graph for HTML */
+  /* graph for CSS */
+  /* graph for LESS */
+  /* graph for Bootstrap */
+  /* graph for Tapestry */
+  /* graph for Javascript */
+  /* graph for jQuery */
+  /* graph for Selector.js */
+  /* graph for Amazon AWS */
+  /* graph for EC2 (Amazon AWS) */
+  /* graph for RDS (Amazon AWS) */
+  /* graph for S3 (Amazon AWS) */
+  /* graph for Cloudfront (Amazon AWS) */
+  /* graph for Cloudformation (Amazon AWS) */
+  /* graph for Fargate (Amazon AWS) */
+  /* graph for Route 53 (Amazon AWS) */
+  /* graph for Azure */
+  /* graph for Git */
+  /* graph for Node */
+  /* graph for Gulp */
+  /* graph for Vagrant */
+  /* graph for Photoshop (PS) */
+  /* graph for Flash (FL) */
+  /* graph for Krita */
+  /* graph for Affinity Design */
+  /* graph for Affinity Photo */
+  /* graph for Concrete5 */
+  /* graph for Magento */
+  /* graph for Saber */
+  /* graph for React Native */
+  /* graph for Realm */
+  /* graph for Flutter */
+  /* graph for Agile */
+  /* graph for Scrum */
+  /* graph for Sprint */
+  /* graph for Azure DevOps (VSTS) */
+  /* graph for Git (Agile) */
+  /* graph for Trello */
+  /* graph for Kandu */
+  /* graph for Slack */
+  /* graph for Blender */
+  /* graph for Unreal Engine 4 */
+}
+.graph div {
+  box-sizing: border-box;
+}
+.graph .item {
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+}
+.graph .label {
+  float: left;
+  width: 200px;
+  text-align: right;
+  font-size: 17px;
+  padding: 7px 15px 0 0;
+}
+.graph .label.large {
+  padding: 3px 15px 0 0;
+}
+.graph .bar {
+  float: left;
+  width: calc(100% - 200px);
+}
+.graph .bar > div {
+  float: left;
+  padding: 7px;
+  color: #fff;
+}
+.graph .bar:after,
+.graph .item:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+}
+.graph .item .label.large {
+  font-size: 22px;
+}
+.graph .item .bar > div {
+  text-overflow: hidden;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.graph > h5 {
+  padding: 40px 0 10px 0;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.graph .item.vs .color_1 {
+  background-color: #02A855;
+}
+.graph .item.vs .color_2 {
+  background-color: #01964B;
+}
+.graph .item.vs .bar_0 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.vs .bar_1 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.vs .bar_2 {
+  width: calc(100% / 23 * 4);
+}
+.graph .item.vs .bar_3 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.vs .bar_4 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.vs .bar_5 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.vs .bar_6 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.vs .bar_7 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.vscode .color_1 {
+  background-color: #02A855;
+}
+.graph .item.vscode .color_2 {
+  background-color: #01964B;
+}
+.graph .item.vscode .bar_0 {
+  width: calc(100% / 23 * 15);
+}
+.graph .item.vscode .bar_1 {
+  width: calc(100% / 23 * 7);
+}
+.graph .item.webforms .color_1 {
+  background-color: #02A8A0;
+}
+.graph .item.webforms .color_2 {
+  background-color: #019696;
+}
+.graph .item.webforms .bar_0 {
+  width: calc(100% / 23 * 6);
+}
+.graph .item.webforms .bar_1 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.webforms .bar_2 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.webforms .bar_3 {
+  width: calc(100% / 23 * 6);
+}
+.graph .item.vsmvc .color_1 {
+  background-color: #02A8A0;
+}
+.graph .item.vsmvc .color_2 {
+  background-color: #019696;
+}
+.graph .item.vsmvc .bar_0 {
+  width: calc(100% / 23 * 15);
+}
+.graph .item.vsmvc .bar_1 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.vsmvc .bar_2 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.vsmvc .bar_3 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.linq .color_1 {
+  background-color: #02A8A0;
+}
+.graph .item.linq .color_2 {
+  background-color: #019696;
+}
+.graph .item.linq .bar_0 {
+  width: calc(100% / 23 * 9);
+}
+.graph .item.linq .bar_1 {
+  width: calc(100% / 23 * 13);
+}
+.graph .item.csharp .color_1 {
+  background-color: #02A8A0;
+}
+.graph .item.csharp .color_2 {
+  background-color: #019696;
+}
+.graph .item.csharp .bar_0 {
+  width: calc(100% / 23 * 14);
+}
+.graph .item.csharp .bar_1 {
+  width: calc(100% / 23 * 8);
+}
+.graph .item.vbnet .color_1 {
+  background-color: #02A8A0;
+}
+.graph .item.vbnet .color_2 {
+  background-color: #019696;
+}
+.graph .item.vbnet .bar_0 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.vbnet .bar_1 {
+  width: calc(100% / 23 * 4);
+}
+.graph .item.vbnet .bar_2 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.vbnet .bar_3 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.vbnet .bar_4 {
+  width: calc(100% / 23 * 4);
+}
+.graph .item.aspnet .color_1 {
+  background-color: #02A8A0;
+}
+.graph .item.aspnet .color_2 {
+  background-color: #019696;
+}
+.graph .item.aspnet .bar_0 {
+  width: calc(100% / 23 * 6);
+}
+.graph .item.aspnet .bar_1 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.aspnet .bar_2 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.aspnet .bar_3 {
+  width: calc(100% / 23 * 6);
+}
+.graph .item.aspnet .bar_4 {
+  width: calc(100% / 23 * 6);
+}
+.graph .item.vb .color_1 {
+  background-color: #02A8A0;
+}
+.graph .item.vb .color_2 {
+  background-color: #019696;
+}
+.graph .item.vb .bar_1 {
+  width: calc(100% / 23 * 1);
+}
+.graph .item.vb .bar_2 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.mssql .color_1 {
+  background-color: #0273A8;
+}
+.graph .item.mssql .color_2 {
+  background-color: #006696;
+}
+.graph .item.mssql .bar_0 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.mssql .bar_1 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.mssql .bar_2 {
+  width: calc(100% / 23 * 4);
+}
+.graph .item.mssql .bar_3 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.mssql .bar_4 {
+  width: calc(100% / 23 * 4);
+}
+.graph .item.mssql .bar_5 {
+  width: calc(100% / 23 * 1);
+}
+.graph .item.mssql .bar_6 {
+  width: calc(100% / 23 * 1);
+}
+.graph .item.mssql .bar_7 {
+  width: calc(100% / 23 * 4);
+}
+.graph .item.php .color_1 {
+  background-color: #02A8A0;
+}
+.graph .item.php .color_2 {
+  background-color: #019696;
+}
+.graph .item.php .bar_0 {
+  width: calc(100% / 23 * 8);
+}
+.graph .item.php .bar_1 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.php .bar_2 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.php .bar_3 {
+  width: calc(100% / 23 * 1);
+}
+.graph .item.php .bar_4 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.mysql .color_1 {
+  background-color: #0273A8;
+}
+.graph .item.mysql .color_2 {
+  background-color: #006696;
+}
+.graph .item.mysql .bar_0 {
+  width: calc(100% / 23 * 8);
+}
+.graph .item.mysql .bar_1 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.mysql .bar_2 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.mysql .bar_3 {
+  width: calc(100% / 23 * 1);
+}
+.graph .item.mysql .bar_4 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.dapper .color_1 {
+  background-color: #02A8A0;
+}
+.graph .item.dapper .color_2 {
+  background-color: #019696;
+}
+.graph .item.dapper .bar_0 {
+  width: calc(100% / 23 * 17);
+}
+.graph .item.dapper .bar_1 {
+  width: calc(100% / 23 * 5);
+}
+.graph .item.html .color_1 {
+  background-color: #51A800;
+}
+.graph .item.html .color_2 {
+  background-color: #479400;
+}
+.graph .item.html .bar_1 {
+  width: calc(100% / 23 * 5);
+}
+.graph .item.html .bar_2 {
+  width: calc(100% / 23 * 7);
+}
+.graph .item.html .bar_3 {
+  width: calc(100% / 23 * 10);
+}
+.graph .item.css .color_1 {
+  background-color: #8ABD00;
+}
+.graph .item.css .color_2 {
+  background-color: #76A800;
+}
+.graph .item.css .bar_1 {
+  width: calc(100% / 23 * 5);
+}
+.graph .item.css .bar_2 {
+  width: calc(100% / 23 * 7);
+}
+.graph .item.css .bar_3 {
+  width: calc(100% / 23 * 10);
+}
+.graph .item.less .color_1 {
+  background-color: #8ABD00;
+}
+.graph .item.less .color_2 {
+  background-color: #76A800;
+}
+.graph .item.less .bar_0 {
+  width: calc(100% / 23 * 12);
+}
+.graph .item.less .bar_1 {
+  width: calc(100% / 23 * 10);
+}
+.graph .item.bootstrap .color_1 {
+  background-color: #8ABD00;
+}
+.graph .item.bootstrap .color_2 {
+  background-color: #76A800;
+}
+.graph .item.bootstrap .bar_0 {
+  width: calc(100% / 23 * 14);
+}
+.graph .item.bootstrap .bar_1 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.tapestry .color_1 {
+  background-color: #8ABD00;
+}
+.graph .item.tapestry .color_2 {
+  background-color: #76A800;
+}
+.graph .item.tapestry .bar_0 {
+  width: calc(100% / 23 * 16);
+}
+.graph .item.tapestry .bar_1 {
+  width: calc(100% / 23 * 6);
+}
+.graph .item.js .color_1 {
+  background-color: #00BD6E;
+}
+.graph .item.js .color_2 {
+  background-color: #00A05B;
+}
+.graph .item.js .bar_1 {
+  width: calc(100% / 23 * 10);
+}
+.graph .item.js .bar_2 {
+  width: calc(100% / 23 * 7);
+}
+.graph .item.js .bar_3 {
+  width: calc(100% / 23 * 5);
+}
+.graph .item.jquery .color_1 {
+  background-color: #00BD6E;
+}
+.graph .item.jquery .color_2 {
+  background-color: #00A05B;
+}
+.graph .item.jquery .bar_0 {
+  width: calc(100% / 23 * 5);
+}
+.graph .item.jquery .bar_1 {
+  width: calc(100% / 23 * 11);
+}
+.graph .item.selectorjs .color_1 {
+  background-color: #00BD6E;
+}
+.graph .item.selectorjs .color_2 {
+  background-color: #00A05B;
+}
+.graph .item.selectorjs .bar_0 {
+  width: calc(100% / 23 * 16);
+}
+.graph .item.selectorjs .bar_1 {
+  width: calc(100% / 23 * 6);
+}
+.graph .item.amazonaws .color_1 {
+  background-color: #00AFAF;
+}
+.graph .item.amazonaws .color_2 {
+  background-color: #019999;
+}
+.graph .item.amazonaws .bar_0 {
+  width: calc(100% / 23 * 16);
+}
+.graph .item.amazonaws .bar_1 {
+  width: calc(100% / 23 * 6);
+}
+.graph .item.aws_ec2 .color_1 {
+  background-color: #00AFAF;
+}
+.graph .item.aws_ec2 .color_2 {
+  background-color: #019999;
+}
+.graph .item.aws_ec2 .bar_0 {
+  width: calc(100% / 23 * 16);
+}
+.graph .item.aws_ec2 .bar_1 {
+  width: calc(100% / 23 * 6);
+}
+.graph .item.aws_rds .color_1 {
+  background-color: #00AFAF;
+}
+.graph .item.aws_rds .color_2 {
+  background-color: #019999;
+}
+.graph .item.aws_rds .bar_0 {
+  width: calc(100% / 23 * 16);
+}
+.graph .item.aws_rds .bar_1 {
+  width: calc(100% / 23 * 6);
+}
+.graph .item.aws_s3 .color_1 {
+  background-color: #00AFAF;
+}
+.graph .item.aws_s3 .color_2 {
+  background-color: #019999;
+}
+.graph .item.aws_s3 .bar_0 {
+  width: calc(100% / 23 * 16);
+}
+.graph .item.aws_s3 .bar_1 {
+  width: calc(100% / 23 * 6);
+}
+.graph .item.aws_cloudfront .color_1 {
+  background-color: #00AFAF;
+}
+.graph .item.aws_cloudfront .color_2 {
+  background-color: #019999;
+}
+.graph .item.aws_cloudfront .bar_0 {
+  width: calc(100% / 23 * 16);
+}
+.graph .item.aws_cloudfront .bar_1 {
+  width: calc(100% / 23 * 6);
+}
+.graph .item.aws_cloudformation .color_1 {
+  background-color: #00AFAF;
+}
+.graph .item.aws_cloudformation .color_2 {
+  background-color: #019999;
+}
+.graph .item.aws_cloudformation .bar_0 {
+  width: calc(100% / 23 * 19);
+}
+.graph .item.aws_cloudformation .bar_1 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.aws_fargate .color_1 {
+  background-color: #00AFAF;
+}
+.graph .item.aws_fargate .color_2 {
+  background-color: #019999;
+}
+.graph .item.aws_fargate .bar_0 {
+  width: calc(100% / 23 * 19);
+}
+.graph .item.aws_fargate .bar_1 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.aws_route53 .color_1 {
+  background-color: #00AFAF;
+}
+.graph .item.aws_route53 .color_2 {
+  background-color: #019999;
+}
+.graph .item.aws_route53 .bar_0 {
+  width: calc(100% / 23 * 16);
+}
+.graph .item.aws_route53 .bar_1 {
+  width: calc(100% / 23 * 6);
+}
+.graph .item.azure .color_1 {
+  background-color: #00AFAF;
+}
+.graph .item.azure .color_2 {
+  background-color: #019999;
+}
+.graph .item.azure .bar_0 {
+  width: calc(100% / 23 * 16);
+}
+.graph .item.azure .bar_1 {
+  width: calc(100% / 23 * 1);
+}
+.graph .item.git .color_1 {
+  background-color: #464646;
+}
+.graph .item.git .color_2 {
+  background-color: #292929;
+}
+.graph .item.git .bar_0 {
+  width: calc(100% / 23 * 14);
+}
+.graph .item.git .bar_1 {
+  width: calc(100% / 23 * 8);
+}
+.graph .item.node .color_1 {
+  background-color: #464646;
+}
+.graph .item.node .color_2 {
+  background-color: #292929;
+}
+.graph .item.node .bar_0 {
+  width: calc(100% / 23 * 14);
+}
+.graph .item.node .bar_1 {
+  width: calc(100% / 23 * 8);
+}
+.graph .item.gulp .color_1 {
+  background-color: #292929;
+}
+.graph .item.gulp .color_2 {
+  background-color: #464646;
+}
+.graph .item.gulp .bar_0 {
+  width: calc(100% / 23 * 14);
+}
+.graph .item.gulp .bar_1 {
+  width: calc(100% / 23 * 8);
+}
+.graph .item.vagrant .color_1 {
+  background-color: #464646;
+}
+.graph .item.vagrant .color_2 {
+  background-color: #292929;
+}
+.graph .item.vagrant .bar_0 {
+  width: calc(100% / 23 * 12);
+}
+.graph .item.vagrant .bar_1 {
+  width: calc(100% / 23 * 5);
+}
+.graph .item.ps .color_1 {
+  background-color: #0184F0;
+}
+.graph .item.ps .color_2 {
+  background-color: #0073D1;
+}
+.graph .item.ps .bar_1 {
+  width: calc(100% / 23 * 5);
+}
+.graph .item.ps .bar_2 {
+  width: calc(100% / 23 * 4);
+}
+.graph .item.ps .bar_3 {
+  width: calc(100% / 23 * 7);
+}
+.graph .item.ps .bar_4 {
+  width: calc(100% / 23 * 6);
+}
+.graph .item.fl .color_1 {
+  background-color: #DA3300;
+}
+.graph .item.fl .color_2 {
+  background-color: #C02D00;
+}
+.graph .item.fl .bar_1 {
+  width: calc(100% / 23 * 5);
+}
+.graph .item.fl .bar_2 {
+  width: calc(100% / 23 * 4);
+}
+.graph .item.fl .bar_3 {
+  width: calc(100% / 23 * 7);
+}
+.graph .item.fl .bar_4 {
+  width: calc(100% / 23 * 6);
+}
+.graph .item.krita .color_1 {
+  background-color: #F56E00;
+}
+.graph .item.krita .color_2 {
+  background-color: #FD5BF5;
+}
+.graph .item.krita .bar_0 {
+  width: calc(100% / 23 * 14);
+}
+.graph .item.krita .bar_1 {
+  width: calc(100% / 23 * 5);
+}
+.graph .item.affinity-design .color_1 {
+  background-color: #60b8eb;
+}
+.graph .item.affinity-design .color_2 {
+  background-color: #4aa8df;
+}
+.graph .item.affinity-design .bar_0 {
+  width: calc(100% / 23 * 19);
+}
+.graph .item.affinity-design .bar_1 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.affinity-photo .color_1 {
+  background-color: #e474e4;
+}
+.graph .item.affinity-photo .color_2 {
+  background-color: #df61df;
+}
+.graph .item.affinity-photo .bar_0 {
+  width: calc(100% / 23 * 19);
+}
+.graph .item.affinity-photo .bar_1 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.c5 .color_1 {
+  background-color: #008FD1;
+}
+.graph .item.c5 .color_2 {
+  background-color: #007CB1;
+}
+.graph .item.c5 .bar_0 {
+  width: calc(100% / 23 * 13);
+}
+.graph .item.c5 .bar_1 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.magento .color_1 {
+  background-color: #008FD1;
+}
+.graph .item.magento .color_2 {
+  background-color: #007CB1;
+}
+.graph .item.magento .bar_0 {
+  width: calc(100% / 23 * 15);
+}
+.graph .item.magento .bar_1 {
+  width: calc(100% / 23 * 1);
+}
+.graph .item.magento .bar_2 {
+  width: calc(100% / 23 * 1);
+}
+.graph .item.saber .color_1 {
+  background-color: #008FD1;
+}
+.graph .item.saber .color_2 {
+  background-color: #007CB1;
+}
+.graph .item.saber .bar_0 {
+  width: calc(100% / 23 * 18);
+}
+.graph .item.saber .bar_1 {
+  width: calc(100% / 23 * 4);
+}
+.graph .item.reactnative .color_1 {
+  background-color: #00D1C0;
+}
+.graph .item.reactnative .color_2 {
+  background-color: #00BDAD;
+}
+.graph .item.reactnative .bar_0 {
+  width: calc(100% / 23 * 17);
+}
+.graph .item.reactnative .bar_1 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.realm .color_1 {
+  background-color: #00D1C0;
+}
+.graph .item.realm .color_2 {
+  background-color: #00BDAD;
+}
+.graph .item.realm .bar_0 {
+  width: calc(100% / 23 * 17);
+}
+.graph .item.realm .bar_1 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.flutter .color_1 {
+  background-color: #00D1C0;
+}
+.graph .item.flutter .color_2 {
+  background-color: #00BDAD;
+}
+.graph .item.flutter .bar_0 {
+  width: calc(100% / 23 * 17);
+}
+.graph .item.flutter .bar_1 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.agile .color_1 {
+  background-color: #FF9100;
+}
+.graph .item.agile .color_2 {
+  background-color: #EB7E01;
+}
+.graph .item.agile .bar_0 {
+  width: calc(100% / 23 * 10);
+}
+.graph .item.agile .bar_1 {
+  width: calc(100% / 23 * 1);
+}
+.graph .item.agile .bar_2 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.agile .bar_3 {
+  width: calc(100% / 23 * 9);
+}
+.graph .item.scrum .color_1 {
+  background-color: #EB7E01;
+}
+.graph .item.scrum .color_2 {
+  background-color: #EB7E01;
+}
+.graph .item.scrum .bar_0 {
+  width: calc(100% / 23 * 10);
+}
+.graph .item.scrum .bar_1 {
+  width: calc(100% / 23 * 1);
+}
+.graph .item.scrum .bar_2 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.scrum .bar_3 {
+  width: calc(100% / 23 * 4);
+}
+.graph .item.scrum .bar_4 {
+  width: calc(100% / 23 * 1);
+}
+.graph .item.scrum .bar_5 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.sprint .color_1 {
+  background-color: #FF9100;
+}
+.graph .item.sprint .color_2 {
+  background-color: #EB7E01;
+}
+.graph .item.sprint .bar_0 {
+  width: calc(100% / 23 * 10);
+}
+.graph .item.sprint .bar_1 {
+  width: calc(100% / 23 * 1);
+}
+.graph .item.sprint .bar_2 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.sprint .bar_3 {
+  width: calc(100% / 23 * 4);
+}
+.graph .item.sprint .bar_4 {
+  width: calc(100% / 23 * 1);
+}
+.graph .item.sprint .bar_5 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.vsts .color_1 {
+  background-color: #FF9100;
+}
+.graph .item.vsts .color_2 {
+  background-color: #EB7E01;
+}
+.graph .item.vsts .bar_0 {
+  width: calc(100% / 23 * 17);
+}
+.graph .item.vsts .bar_1 {
+  width: calc(100% / 23 * 1);
+}
+.graph .item.vsts .bar_2 {
+  width: calc(100% / 23 * 1);
+}
+.graph .item.vsts .bar_3 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.git-agile .color_1 {
+  background-color: #EB7E01;
+}
+.graph .item.git-agile .color_2 {
+  background-color: #EB7E01;
+}
+.graph .item.trello .color_1 {
+  background-color: #FF9100;
+}
+.graph .item.trello .color_2 {
+  background-color: #EB7E01;
+}
+.graph .item.trello .bar_0 {
+  width: calc(100% / 23 * 15);
+}
+.graph .item.trello .bar_1 {
+  width: calc(100% / 23 * 3);
+}
+.graph .item.kandu .color_1 {
+  background-color: #FF9100;
+}
+.graph .item.kandu .color_2 {
+  background-color: #EB7E01;
+}
+.graph .item.kandu .bar_0 {
+  width: calc(100% / 23 * 18);
+}
+.graph .item.kandu .bar_1 {
+  width: calc(100% / 23 * 4);
+}
+.graph .item.slack .color_1 {
+  background-color: #EB7E01;
+}
+.graph .item.slack .color_2 {
+  background-color: #EB7E01;
+}
+.graph .item.slack .bar_0 {
+  width: calc(100% / 23 * 16);
+}
+.graph .item.slack .bar_1 {
+  width: calc(100% / 23 * 2);
+}
+.graph .item.blender .color_1 {
+  background-color: #7C7C7C;
+}
+.graph .item.blender .color_2 {
+  background-color: #6D6D6D;
+}
+.graph .item.blender .bar_0 {
+  width: calc(100% / 23 * 16);
+}
+.graph .item.blender .bar_1 {
+  width: calc(100% / 23 * 3);
+}
+/* Projects */
+.project {
+  float: left;
+  width: 25%;
+  padding: 30px 30px 60px 30px;
+  box-sizing: border-box;
+}
+.project::after {
+  content: " ";
+  clear: both;
+  display: block;
+  height: 0;
+  font-size: 0;
+}
+.project .logo {
+  text-align: center;
+  padding: 0 0 50px 0;
+}
+.project .logo img {
+  margin: 0 auto;
+  width: 80%;
+}
+.project .description {
+  font-size: 17px;
+  height: 110px;
+}
+.project .github {
+  float: right;
+}
+.project .github img {
+  display: inline-block;
+  position: relative;
+  top: 13px;
+  width: 50px;
+  padding-right: 10px;
+}
+.project .github span {
+  font-size: 20px;
+}
+.project.empty {
+  opacity: 0.25;
+}
+.contact {
+  clear: both;
+}
+.contact .note {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 15px;
+  padding: 50px;
+}
+/* media queries */
+@media (max-width: 1480px) {
+  body {
+    overflow-x: hidden;
+  }
+  .content {
+    padding: 0px 60px 0 20px;
+  }
+  .project {
+    width: 33%;
+  }
+}
+@media (max-width: 950px) {
+  .project {
+    width: 50%;
+  }
+}
+@media (max-width: 660px) {
+  .project {
+    width: 100%;
+  }
+}

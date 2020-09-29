@@ -1,0 +1,590 @@
+/* fonts */
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'), url(/fonts/opensans/opensans-lightitalic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(/fonts/opensans/opensans-italic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(/fonts/opensans/opensans-bolditalic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(/fonts/opensans/opensans-light.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(/fonts/opensans/opensans-regular.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(/fonts/opensans/opensans-bold.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* reset */
+body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, code, img, strong, b, u, i, ol, ul, li,
+fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav, section, summary
+{margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline;}
+
+/* body */
+body{font-weight:400; color:#272727; background-color:#ffffff;}
+body, h1, h2, h3, h4, h5, h6, span, input, select, textarea{font-family: Open Sans, Arial, Helvetica, sans;}
+
+/* fonts */
+h1, h2, h3, h4, h5, h6{font-family: 'Jaldi', sans-serif; line-height:1.25}
+h1{font-size: 82px;}
+h2{font-size: 56px;}
+h3{font-size: 48px;}
+h4{font-size: 36px;}
+h5{font-size: 24px;}
+h6{font-size: 20px;}
+
+a:link{color:#6666ff; text-decoration:none;}
+a:hover{color:#894aff; text-decoration:underline;}
+a:active{color:#894aff; }
+a:visited{color:#6666ff; }
+
+/* content */
+.content{position:relative; width:100%; max-width:1400px; margin:0px auto;}
+.title{width:100%; text-align:center; padding:50px 0px 20px 0px;}
+
+/* header */
+@header-height:500px;
+header{position:fixed; top:0px; height:@header-height; z-index:1000; width:100%;
+  .intro{position:absolute; display:table; width:100%; height:100%; color:#fff; z-index:1000; top:0; right:0; bottom:0; left:0; text-align:center;}
+  .content{display:table-cell; vertical-align:middle;
+    h1{padding-bottom:10px;}
+    h4{padding-bottom:50px;}
+    h6{opacity:0.6;}
+  }
+  .profile-pic{position:absolute; bottom:-85px; width:100%; text-align:center; z-index:1001;
+    img{width:150px; margin:0 auto;}
+  }
+}
+
+/* skills */
+.skills{padding-top:@header-height + 50;}
+
+.divider{width:100%; height:2px; background-color:#eaeaea; font-size:0px; margin:0 0 20px 0;}
+
+/* bio */
+.bio{font-family: 'Jaldi', sans-serif; font-size:24px; padding:50px 0px 50px 0px}
+.bio .content{max-width:1030px;}
+.bio p{padding-bottom:30px;}
+
+/* contact */
+.contact{position:relative; width:100%; height:300px; color:#ffffff;
+  .content{position:absolute; z-index:900; top:25; right:0; bottom:0; left:0; text-align:center;
+    h5{padding-bottom:10px;}
+    a{font-size:24px;}
+    a:link{color:#fff;}
+    a:hover{color:#d0e3ff;}
+    a:active{color:#d0e3ff;}
+    a:visited{color:#fff;}
+  }
+}
+
+/* graph */
+@years:23; // 2000 - 2021
+.graph{margin-bottom:50px;
+  div{box-sizing:border-box;}
+  .item{width:100%; border-bottom:1px solid #e0e0e0;}
+  .label{float:left; width:200px; text-align:right; font-size:17px; padding:7px 15px 0 0;}
+  .label.large{padding:3px 15px 0 0;}
+  .bar{float:left; width:~"calc(100% - 200px)";}
+  .bar > div{float:left; padding:7px; color:#fff;}
+  .bar:after, 
+  .item:after{content:""; clear:both; display:block;height:0;}
+  .item .label.large{font-size:22px;}
+  .item .bar > div{text-overflow:hidden;overflow:hidden;white-space:nowrap;}
+  & > h5{padding:40px 0 10px 0; text-align:center; width:100%; box-sizing:border-box;}
+
+
+  /* graph for Visual Studio (VS) */
+  .item.vs{
+    .color_1{background-color:#02A855}
+    .color_2{background-color:#01964B}
+    .bar_0{width:calc(100% / @years * 2);} //empty (2000 - 2001)
+    .bar_1{width:calc(100% / @years * 3);} //VS 2002 (2002 - 2004)
+    .bar_2{width:calc(100% / @years * 4);} //VS 2005 (2005 - 2008)
+    .bar_3{width:calc(100% / @years * 3);} //VS 2008 (2009 - 2011)
+    .bar_4{width:calc(100% / @years * 3);} //VS 2010 (2012 - 2014)
+    .bar_5{width:calc(100% / @years * 2);} //VS 2015 (2015 - 2016)
+    .bar_6{width:calc(100% / @years * 2);} //VS 2017 (2017 - 2018)
+    .bar_7{width:calc(100% / @years * 3);} //VS 2019 (2019 - 2021)
+  }
+
+  /* graph for Visual Studio Code */
+  .item.vscode .color_1{background-color:#02A855}
+  .item.vscode .color_2{background-color:#01964B}
+  .item.vscode .bar_0{width:calc(100% / @years * 15);} //empty (2000 - 2014)
+  .item.vscode .bar_1{width:calc(100% / @years * 7);} //VS Code (2015 - 2021)
+
+  /* graph for Webforms */
+  .item.webforms .color_1{background-color:#02A8A0}
+  .item.webforms .color_2{background-color:#019696}
+  .item.webforms .bar_0{width:calc(100% / @years * 6);} //empty (2000 - 2005)
+  .item.webforms .bar_1{width:calc(100% / @years * 2);} //vb 2.0 (2006 - 2007)
+  .item.webforms .bar_2{width:calc(100% / @years * 2);} //vb 3.5 (2008 - 2009)
+  .item.webforms .bar_3{width:calc(100% / @years * 6);} //vb & c# 4.5 (2010 - 2015)
+
+  /* graph for MVC */
+  .item.vsmvc .color_1{background-color:#02A8A0}
+  .item.vsmvc .color_2{background-color:#019696}
+  .item.vsmvc .bar_0{width:calc(100% / @years * 15);} //empty (2000 - 2014)
+  .item.vsmvc .bar_1{width:calc(100% / @years * 2);} //Websilk (2015 - 2016)
+  .item.vsmvc .bar_2{width:calc(100% / @years * 2);} //5.0 (2017 - 2018)
+  .item.vsmvc .bar_3{width:calc(100% / @years * 3);} //Datasilk (2019 - 2021)
+
+  /* graph for LINQ */
+  .item.linq .color_1{background-color:#02A8A0}
+  .item.linq .color_2{background-color:#019696}
+  .item.linq .bar_0{width:calc(100% / @years * 9);} //empty (2000 - 2008)
+  .item.linq .bar_1{width:calc(100% / @years * 13);} //2.0 (2009 - 2021)
+
+  /* graph for C# */
+  .item.csharp .color_1{background-color:#02A8A0}
+  .item.csharp .color_2{background-color:#019696}
+  .item.csharp .bar_0{width:calc(100% / @years * 14);} //empty (2000 - 2013)
+  .item.csharp .bar_1{width:calc(100% / @years * 8);} //2.0 (2014 - 2021)
+
+  /* graph for VB.net */
+  .item.vbnet .color_1{background-color:#02A8A0}
+  .item.vbnet .color_2{background-color:#019696}
+  .item.vbnet .bar_0{width:calc(100% / @years * 2);} //empty (2000 - 2001)
+  .item.vbnet .bar_1{width:calc(100% / @years * 4);} //1.1 (2002 - 2005)
+  .item.vbnet .bar_2{width:calc(100% / @years * 2);} //2.0 (2006 - 2007)
+  .item.vbnet .bar_3{width:calc(100% / @years * 2);} //3.5 (2008 - 2009)
+  .item.vbnet .bar_4{width:calc(100% / @years * 4);} //4.5 (2010 - 2013)
+
+  /* graph for ASP.net */
+  .item.aspnet .color_1{background-color:#02A8A0}
+  .item.aspnet .color_2{background-color:#019696}
+  .item.aspnet .bar_0{width:calc(100% / @years * 6);} //empty (2000 - 2005)
+  .item.aspnet .bar_1{width:calc(100% / @years * 2);} //2.0 (2006 - 2007)
+  .item.aspnet .bar_2{width:calc(100% / @years * 2);} //3.5 (2008 - 2009)
+  .item.aspnet .bar_3{width:calc(100% / @years * 6);} //4.5 (2010 - 2015)
+  .item.aspnet .bar_4{width:calc(100% / @years * 6);} //Core (2016 - 2021)
+
+  /* graph for Visual Basic (VB) */
+  .item.vb .color_1{background-color:#02A8A0}
+  .item.vb .color_2{background-color:#019696}
+  .item.vb .bar_1{width:calc(100% / @years * 1);} //VB 4.0 (2000)
+  .item.vb .bar_2{width:calc(100% / @years * 2);} //VB 6.0 (2001 - 2002)
+
+  /* graph for SQL Server */
+  .item.mssql .color_1{background-color:#0273A8}
+  .item.mssql .color_2{background-color:#006696}
+  .item.mssql .bar_0{width:calc(100% / @years * 2);} //empty (2000 - 2001)
+  .item.mssql .bar_1{width:calc(100% / @years * 3);} //2000 (2002 - 2004)
+  .item.mssql .bar_2{width:calc(100% / @years * 4);} //2005 (2005 - 2008)
+  .item.mssql .bar_3{width:calc(100% / @years * 3);} //2008 (2009 - 2011)
+  .item.mssql .bar_4{width:calc(100% / @years * 4);} //2012 (2012 - 2015)
+  .item.mssql .bar_5{width:calc(100% / @years * 1);} //2014 (2016)
+  .item.mssql .bar_6{width:calc(100% / @years * 1);} //2016 (2017)
+  .item.mssql .bar_7{width:calc(100% / @years * 4);} //2017 (2018 - 2021)
+
+  /* graph for PHP */
+  .item.php .color_1{background-color:#02A8A0}
+  .item.php .color_2{background-color:#019696}
+  .item.php .bar_0{width:calc(100% / @years * 8);} //empty (2000 - 2007)
+  .item.php .bar_1{width:calc(100% / @years * 3);} //5.2 (2008 - 2010)
+  .item.php .bar_2{width:calc(100% / @years * 3);} //empty (2011 - 2013)
+  .item.php .bar_3{width:calc(100% / @years * 1);} //5.2 (2014)
+  .item.php .bar_4{width:calc(100% / @years * 2);} //5.3 (2015 - 2016)
+
+  /* graph for MySql */
+  .item.mysql .color_1{background-color:#0273A8}
+  .item.mysql .color_2{background-color:#006696}
+  .item.mysql .bar_0{width:calc(100% / @years * 8);} //empty (2000 - 2007)
+  .item.mysql .bar_1{width:calc(100% / @years * 3);} //5.2 (2008 - 2010)
+  .item.mysql .bar_2{width:calc(100% / @years * 3);} //empty (2011 - 2013)
+  .item.mysql .bar_3{width:calc(100% / @years * 1);} //5.2 (2014)
+  .item.mysql .bar_4{width:calc(100% / @years * 2);} //5.3 (2015 - 2016)
+
+  /* graph for Dapper */
+  .item.dapper .color_1{background-color:#02A8A0}
+  .item.dapper .color_2{background-color:#019696}
+  .item.dapper .bar_0{width:calc(100% / @years * 17);} //empty (2000 - 2016)
+  .item.dapper .bar_1{width:calc(100% / @years * 5);} //2.0 (2017 - 2021)
+
+  /* graph for HTML */
+  .item.html .color_1{background-color:#51A800}
+  .item.html .color_2{background-color:#479400}
+  .item.html .bar_1{width:calc(100% / @years * 5);} //HTML (2000 - 2004)
+  .item.html .bar_2{width:calc(100% / @years * 7);} //XHTML (2005 - 2011)
+  .item.html .bar_3{width:calc(100% / @years * 10);} //HTML5 (2012 - 2021)
+
+  /* graph for CSS */
+  .item.css .color_1{background-color:#8ABD00}
+  .item.css .color_2{background-color:#76A800}
+  .item.css .bar_1{width:calc(100% / @years * 5);} //CSS (2000 - 2004)
+  .item.css .bar_2{width:calc(100% / @years * 7);} //CSS2 (2005 - 2011)
+  .item.css .bar_3{width:calc(100% / @years * 10);} //CSS3 (2012 - 2021)
+
+  /* graph for LESS */
+  .item.less .color_1{background-color:#8ABD00}
+  .item.less .color_2{background-color:#76A800}
+  .item.less .bar_0{width:calc(100% / @years * 12);} //empty (2000 - 2011)
+  .item.less .bar_1{width:calc(100% / @years * 10);} //CSS2 (2012 - 2021)
+
+  /* graph for Bootstrap */
+  .item.bootstrap .color_1{background-color:#8ABD00}
+  .item.bootstrap .color_2{background-color:#76A800}
+  .item.bootstrap .bar_0{width:calc(100% / @years * 14);} //empty (2000 - 2013)
+  .item.bootstrap .bar_1{width:calc(100% / @years * 2);} //Bootstrap (2014 - 2015)
+
+  /* graph for Tapestry */
+  .item.tapestry .color_1{background-color:#8ABD00}
+  .item.tapestry .color_2{background-color:#76A800}
+  .item.tapestry .bar_0{width:calc(100% / @years * 16);} //empty (2000 - 2015)
+  .item.tapestry .bar_1{width:calc(100% / @years * 6);} //ES5 (2016 - 2021)
+
+  /* graph for Javascript */
+  .item.js .color_1{background-color:#00BD6E}
+  .item.js .color_2{background-color:#00A05B}
+  .item.js .bar_1{width:calc(100% / @years * 10);} //ES3 (2000 - 2009)
+  .item.js .bar_2{width:calc(100% / @years * 7);} //ES5 (2010 - 2016)
+  .item.js .bar_3{width:calc(100% / @years * 5);} //ES6 (2017 - 2021)
+
+  /* graph for jQuery */
+  .item.jquery .color_1{background-color:#00BD6E}
+  .item.jquery .color_2{background-color:#00A05B}
+  .item.jquery .bar_0{width:calc(100% / @years * 5);} //empty (2000 - 2004)
+  .item.jquery .bar_1{width:calc(100% / @years * 11);} // (2005 - 2015)
+
+  /* graph for Selector.js */
+  .item.selectorjs .color_1{background-color:#00BD6E}
+  .item.selectorjs .color_2{background-color:#00A05B}
+  .item.selectorjs .bar_0{width:calc(100% / @years * 16);} //empty (2000 - 2015)
+  .item.selectorjs .bar_1{width:calc(100% / @years * 6);} // (2016 - 2021)
+
+  /* graph for Amazon AWS */
+  .item.amazonaws .color_1{background-color:#00AFAF}
+  .item.amazonaws .color_2{background-color:#019999}
+  .item.amazonaws .bar_0{width:calc(100% / @years * 16);} //empty (2000 - 2015)
+  .item.amazonaws .bar_1{width:calc(100% / @years * 6);} // (2016 - 2021)
+
+  /* graph for EC2 (Amazon AWS) */
+  .item.aws_ec2 .color_1{background-color:#00AFAF}
+  .item.aws_ec2 .color_2{background-color:#019999}
+  .item.aws_ec2 .bar_0{width:calc(100% / @years * 16);} //empty (2000 - 2015)
+  .item.aws_ec2 .bar_1{width:calc(100% / @years * 6);} // (2016 - 2021)
+
+  /* graph for RDS (Amazon AWS) */
+  .item.aws_rds .color_1{background-color:#00AFAF}
+  .item.aws_rds .color_2{background-color:#019999}
+  .item.aws_rds .bar_0{width:calc(100% / @years * 16);} //empty (2000 - 2015)
+  .item.aws_rds .bar_1{width:calc(100% / @years * 6);} // (2016 - 2021)
+
+  /* graph for S3 (Amazon AWS) */
+  .item.aws_s3 .color_1{background-color:#00AFAF}
+  .item.aws_s3 .color_2{background-color:#019999}
+  .item.aws_s3 .bar_0{width:calc(100% / @years * 16);} //empty (2000 - 2015)
+  .item.aws_s3 .bar_1{width:calc(100% / @years * 6);} // (2016 - 2021)
+
+  /* graph for Cloudfront (Amazon AWS) */
+  .item.aws_cloudfront .color_1{background-color:#00AFAF}
+  .item.aws_cloudfront .color_2{background-color:#019999}
+  .item.aws_cloudfront .bar_0{width:calc(100% / @years * 16);} //empty (2000 - 2015)
+  .item.aws_cloudfront .bar_1{width:calc(100% / @years * 6);} // (2016 - 2021)
+
+  /* graph for Cloudformation (Amazon AWS) */
+  .item.aws_cloudformation .color_1{background-color:#00AFAF}
+  .item.aws_cloudformation .color_2{background-color:#019999}
+  .item.aws_cloudformation .bar_0{width:calc(100% / @years * 19);} //empty (2000 - 2018)
+  .item.aws_cloudformation .bar_1{width:calc(100% / @years * 3);} // (2019 - 2021)
+
+  /* graph for Fargate (Amazon AWS) */
+  .item.aws_fargate .color_1{background-color:#00AFAF}
+  .item.aws_fargate .color_2{background-color:#019999}
+  .item.aws_fargate .bar_0{width:calc(100% / @years * 19);} //empty (2000 - 2018)
+  .item.aws_fargate .bar_1{width:calc(100% / @years * 3);} // (2019 - 2021)
+
+  /* graph for Route 53 (Amazon AWS) */
+  .item.aws_route53 .color_1{background-color:#00AFAF}
+  .item.aws_route53 .color_2{background-color:#019999}
+  .item.aws_route53 .bar_0{width:calc(100% / @years * 16);} //empty (2000 - 2015)
+  .item.aws_route53 .bar_1{width:calc(100% / @years * 6);} // (2016 - 2021)
+
+  /* graph for Azure */
+  .item.azure .color_1{background-color:#00AFAF}
+  .item.azure .color_2{background-color:#019999}
+  .item.azure .bar_0{width:calc(100% / @years * 16);} //empty (2000 - 2015)
+  .item.azure .bar_1{width:calc(100% / @years * 1);} // (2016)
+
+  /* graph for Git */
+  .item.git .color_1{background-color:#464646}
+  .item.git .color_2{background-color:#292929}
+  .item.git .bar_0{width:calc(100% / @years * 14);} //empty (2000 - 2013)
+  .item.git .bar_1{width:calc(100% / @years * 8);} // (2014 - 2021)
+
+  /* graph for Node */
+  .item.node .color_1{background-color:#464646}
+  .item.node .color_2{background-color:#292929}
+  .item.node .bar_0{width:calc(100% / @years * 14);} //empty (2000 - 2013)
+  .item.node .bar_1{width:calc(100% / @years * 8);} // (2014 - 2021)
+
+  /* graph for Gulp */
+  .item.gulp .color_1{background-color:#292929}
+  .item.gulp .color_2{background-color:#464646}
+  .item.gulp .bar_0{width:calc(100% / @years * 14);} //empty (2000 - 2013)
+  .item.gulp .bar_1{width:calc(100% / @years * 8);} // (2014 - 2021)
+
+  /* graph for Vagrant */
+  .item.vagrant .color_1{background-color:#464646}
+  .item.vagrant .color_2{background-color:#292929}
+  .item.vagrant .bar_0{width:calc(100% / @years * 12);} //empty (2000 - 2011)
+  .item.vagrant .bar_1{width:calc(100% / @years * 5);} // (2012 - 2016)
+
+  /* graph for Photoshop (PS) */
+  .item.ps .color_1{background-color:#0184F0}
+  .item.ps .color_2{background-color:#0073D1}
+  .item.ps .bar_1{width:calc(100% / @years * 5);} //4.0 (2000 - 2004)
+  .item.ps .bar_2{width:calc(100% / @years * 4);} //CS2 (2005 - 2008)
+  .item.ps .bar_3{width:calc(100% / @years * 7);} //CS3 (2009 - 2015)
+  .item.ps .bar_4{width:calc(100% / @years * 6);} //CC (2016 - 2021)
+
+  /* graph for Flash (FL) */
+  .item.fl .color_1{background-color:#DA3300}
+  .item.fl .color_2{background-color:#C02D00}
+  .item.fl .bar_1{width:calc(100% / @years * 5);} //Macromedia (2000 - 2004)
+  .item.fl .bar_2{width:calc(100% / @years * 4);} //CS2 (2005 - 2008)
+  .item.fl .bar_3{width:calc(100% / @years * 7);} //CS3 (2009 - 2015)
+  .item.fl .bar_4{width:calc(100% / @years * 6);} //CC (2016 - 2021)
+
+  /* graph for Krita */
+  .item.krita .color_1{background-color:#F56E00}
+  .item.krita .color_2{background-color:#FD5BF5}
+  .item.krita .bar_0{width:calc(100% / @years * 14);} //empty (2000 - 2013)
+  .item.krita .bar_1{width:calc(100% / @years * 5);} //CS2 (2014 - 2018)
+
+  /* graph for Affinity Design */
+  .item.affinity-design .color_1{background-color:#60b8eb}
+  .item.affinity-design .color_2{background-color:#4aa8df}
+  .item.affinity-design .bar_0{width:calc(100% / @years * 19);} //empty (2000 - 2018)
+  .item.affinity-design .bar_1{width:calc(100% / @years * 3);} //Design (2019 - 2021)
+
+  /* graph for Affinity Photo */
+  .item.affinity-photo .color_1{background-color:#e474e4}
+  .item.affinity-photo .color_2{background-color:#df61df}
+  .item.affinity-photo .bar_0{width:calc(100% / @years * 19);} //empty (2000 - 2018)
+  .item.affinity-photo .bar_1{width:calc(100% / @years * 3);} //Photo (2019 - 2021)
+
+  /* graph for Concrete5 */
+  .item.c5 .color_1{background-color:#008FD1}
+  .item.c5 .color_2{background-color:#007CB1}
+  .item.c5 .bar_0{width:calc(100% / @years * 13);} //empty (2000 - 2012)
+  .item.c5 .bar_1{width:calc(100% / @years * 2);} // (2013 - 2014)
+
+  /* graph for Magento */
+  .item.magento .color_1{background-color:#008FD1}
+  .item.magento .color_2{background-color:#007CB1}
+  .item.magento .bar_0{width:calc(100% / @years * 15);} //empty (2000 - 2014)
+  .item.magento .bar_1{width:calc(100% / @years * 1);} // 1.9 (2015)
+  .item.magento .bar_2{width:calc(100% / @years * 1);} // 2.1 (2016)
+
+  ///* graph for Rennder */
+  //.item.rennder .color_1{background-color:#008FD1}
+  //.item.rennder .color_2{background-color:#007CB1}
+  //.item.rennder .bar_0{width:calc(100% / @years * 8);} //empty (2000 - 2007)
+  //.item.rennder .bar_1{width:calc(100% / @years * 7);} // (2008-2014)
+//
+  ///* graph for Websilk */
+  //.item.websilk .color_1{background-color:#008FD1}
+  //.item.websilk .color_2{background-color:#007CB1}
+  //.item.websilk .bar_0{width:calc(100% / @years * 15);} //empty (2000 - 2014)
+  //.item.websilk .bar_1{width:calc(100% / @years * 2);} // (2015-2016)
+  //.item.websilk .bar_2{width:calc(100% / @years * 1);} // Headless (2017)
+
+  /* graph for Saber */
+  .item.saber .color_1{background-color:#008FD1}
+  .item.saber .color_2{background-color:#007CB1}
+  .item.saber .bar_0{width:calc(100% / @years * 18);} //empty (2000 - 2017)
+  .item.saber .bar_1{width:calc(100% / @years * 4);} // (2018-2021)
+
+  /* graph for React Native */
+  .item.reactnative .color_1{background-color:#00D1C0}
+  .item.reactnative .color_2{background-color:#00BDAD}
+  .item.reactnative .bar_0{width:calc(100% / @years * 17);} //empty (2000 - 2016)
+  .item.reactnative .bar_1{width:calc(100% / @years * 3);} // (2017 - 2019)
+
+  /* graph for Realm */
+  .item.realm .color_1{background-color:#00D1C0}
+  .item.realm .color_2{background-color:#00BDAD}
+  .item.realm .bar_0{width:calc(100% / @years * 17);} //empty (2000 - 2016)
+  .item.realm .bar_1{width:calc(100% / @years * 3);} // (2017 - 2019)
+
+  /* graph for Flutter */
+  .item.flutter .color_1{background-color:#00D1C0}
+  .item.flutter .color_2{background-color:#00BDAD}
+  .item.flutter .bar_0{width:calc(100% / @years * 17);} //empty (2000 - 2016)
+  .item.flutter .bar_1{width:calc(100% / @years * 2);} // (2017 - 2018)
+
+  @color1: #FF9100;
+  @color2: #EB7E01;
+  /* graph for Agile */
+  .item.agile .color_1{background-color:@color1}
+  .item.agile .color_2{background-color:@color2}
+  .item.agile .bar_0{width:calc(100% / @years * 10);} //empty (2000 - 2009)
+  .item.agile .bar_1{width:calc(100% / @years * 1);} // (2010)
+  .item.agile .bar_2{width:calc(100% / @years * 2);} //empty (2011 - 2012)
+  .item.agile .bar_3{width:calc(100% / @years * 9);} // (2013 - 2021)
+
+  /* graph for Scrum */
+  .item.scrum .color_1{background-color:@color2}
+  .item.scrum .color_2{background-color:@color2}
+  .item.scrum .bar_0{width:calc(100% / @years * 10);} //empty (2000 - 2009)
+  .item.scrum .bar_1{width:calc(100% / @years * 1);} // (2010)
+  .item.scrum .bar_2{width:calc(100% / @years * 3);} //empty (2011 - 2013)
+  .item.scrum .bar_3{width:calc(100% / @years * 4);} // (2014 - 2017)
+  .item.scrum .bar_4{width:calc(100% / @years * 1);} //empty (2018)
+  .item.scrum .bar_5{width:calc(100% / @years * 2);} // (2019 - 2020)
+
+  /* graph for Sprint */
+  .item.sprint .color_1{background-color:@color1}
+  .item.sprint .color_2{background-color:@color2}
+  .item.sprint .bar_0{width:calc(100% / @years * 10);} //empty (2000 - 2009)
+  .item.sprint .bar_1{width:calc(100% / @years * 1);} // (2010)
+  .item.sprint .bar_2{width:calc(100% / @years * 3);} //empty (2011 - 2013)
+  .item.sprint .bar_3{width:calc(100% / @years * 4);} // (2014 - 2017)
+  .item.sprint .bar_4{width:calc(100% / @years * 1);} //empty (2018)
+  .item.sprint .bar_5{width:calc(100% / @years * 2);} // (2019 - 2020)
+
+  /* graph for Azure DevOps (VSTS) */
+  .item.vsts .color_1{background-color:@color1}
+  .item.vsts .color_2{background-color:@color2}
+  .item.vsts .bar_0{width:calc(100% / @years * 17);} //empty (2000 - 2016)
+  .item.vsts .bar_1{width:calc(100% / @years * 1);} //(2017)
+  .item.vsts .bar_2{width:calc(100% / @years * 1);} //empty (2018)
+  .item.vsts .bar_3{width:calc(100% / @years * 2);} //(2019 - 2020)
+
+  /* graph for Git (Agile) */
+  .item.git-agile .color_1{background-color:@color2}
+  .item.git-agile .color_2{background-color:@color2}
+
+  /* graph for Trello */
+  .item.trello .color_1{background-color:@color1}
+  .item.trello .color_2{background-color:@color2}
+  .item.trello .bar_0{width:calc(100% / @years * 15);} //empty (2000 - 2014)
+  .item.trello .bar_1{width:calc(100% / @years * 3);} //(2015 - 2017)
+
+  /* graph for Kandu */
+  .item.kandu .color_1{background-color:@color1}
+  .item.kandu .color_2{background-color:@color2}
+  .item.kandu .bar_0{width:calc(100% / @years * 18);} //empty (2000 - 2017)
+  .item.kandu .bar_1{width:calc(100% / @years * 4);} //(2018 - 2021)
+
+  /* graph for Slack */
+  .item.slack .color_1{background-color:@color2}
+  .item.slack .color_2{background-color:@color2}
+  .item.slack .bar_0{width:calc(100% / @years * 16);} //empty (2000 - 2015)
+  .item.slack .bar_1{width:calc(100% / @years * 2);} //(2016 - 2017)
+
+  /* graph for Blender */
+  .item.blender .color_1{background-color:#7C7C7C}
+  .item.blender .color_2{background-color:#6D6D6D}
+  .item.blender .bar_0{width:calc(100% / @years * 16);} //empty (2000 - 2015)
+  .item.blender .bar_1{width:calc(100% / @years * 3);} // (2016 - 2018)
+
+  
+  /* graph for Unreal Engine 4 */
+  //.item.ue4 .color_1{background-color:#7C7C7C}
+  //.item.ue4 .color_2{background-color:#6D6D6D}
+  //.item.ue4 .bar_0{width:calc(100% / @years * 16);} //empty (2000 - 2015)
+  //.item.ue4 .bar_1{width:calc(100% / @years * 1);} // (2016)
+//
+  ///* graph for Unity 3D */
+  //.item.unity .color_1{background-color:#7C7C7C}
+  //.item.unity .color_2{background-color:#6D6D6D}
+  //.item.unity .bar_0{width:calc(100% / @years * 18);} //empty (2000 - 2017)
+  //.item.unity .bar_1{width:calc(100% / @years * 1);} // (2018)
+//
+  ///* graph for Cubase SX */
+  //.item.cubase .color_1{background-color:#6700DD}
+  //.item.cubase .color_2{background-color:#5900C5}
+  //.item.cubase .bar_0{width:calc(100% / @years * 2);} //empty (2000 - 2001)
+  //.item.cubase .bar_1{width:calc(100% / @years * 1);} //1 (2002)
+  //.item.cubase .bar_2{width:calc(100% / @years * 1);} //2 (2003)
+  //.item.cubase .bar_3{width:calc(100% / @years * 2);} //3 (2004 - 2005)
+  //.item.cubase .bar_4{width:calc(100% / @years * 3);} //4 (2006 - 2008)
+//
+  ///* graph for Reason */
+  //.item.reason .color_1{background-color:#6700DD}
+  //.item.reason .color_2{background-color:#5900C5}
+  //.item.reason .bar_1{width:calc(100% / @years * 3);} //1 (2000 - 2002)
+  //.item.reason .bar_2{width:calc(100% / @years * 2);} //2 (2003 - 2004)
+  //.item.reason .bar_3{width:calc(100% / @years * 3);} //3 (2005 - 2007)
+  //.item.reason .bar_4{width:calc(100% / @years * 2);} //4 (2008 - 2009)
+  //.item.reason .bar_5{width:calc(100% / @years * 3);} //5 (2010 - 2012)
+//
+  ///* graph for Bitwig */
+  //.item.bitwig .color_1{background-color:#6700DD}
+  //.item.bitwig .color_2{background-color:#5900C5}
+  //.item.bitwig .bar_0{width:calc(100% / @years * 14);} //empty (2000 - 2013)
+  //.item.bitwig .bar_1{width:calc(100% / @years * 3);} // (2014 - 2016)
+//
+  ///* graph for Studio One */
+  //.item.studio1 .color_1{background-color:#6700DD}
+  //.item.studio1 .color_2{background-color:#5900C5}
+  //.item.studio1 .bar_0{width:calc(100% / @years * 17);} //empty (2000 - 2016)
+  //.item.studio1 .bar_1{width:calc(100% / @years * 1);} // (2017)
+}
+
+/* Projects */
+.project{float:left; width:25%; padding:30px 30px 60px 30px; box-sizing:border-box;}
+.project::after{content:" ";clear:both;display:block;height:0;font-size:0;}
+.project .logo{text-align:center; padding:0 0 50px 0;}
+.project .logo img{margin:0 auto; width:80%;}
+.project .description{font-size:17px; height:110px;}
+.project .github{float:right;}
+.project .github img{display:inline-block; position:relative; top:13px; width:50px; padding-right:10px;}
+.project .github span{font-size:20px;}
+
+.project.empty{opacity:0.25;}
+
+.contact{clear:both;}
+.contact .note{width:100%; box-sizing:border-box; text-align:center; font-size:15px; padding:50px;}
+
+/* media queries */
+@media (max-width: 1480px){
+  body{overflow-x:hidden;}
+  .content{padding:0px 60px 0 20px;}
+  .project{width:33%;}
+}
+
+@media (max-width: 950px){
+  .project{width:50%;}
+}
+
+@media (max-width: 660px){
+  .project{width:100%;}
+}

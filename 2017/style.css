@@ -1,0 +1,1210 @@
+@import url(https://fonts.googleapis.com/css?family=Jaldi);
+/* reset */
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+img,
+strong,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* body */
+body {
+  color: #272727;
+  background-color: #ffffff;
+  font-family: 'Jaldi', sans-serif;
+}
+/* fonts */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Jaldi', sans-serif;
+  line-height: 1.25;
+}
+h1 {
+  font-size: 72px;
+}
+h2 {
+  font-size: 56px;
+}
+h3 {
+  font-size: 48px;
+}
+h4 {
+  font-size: 36px;
+}
+h5 {
+  font-size: 24px;
+}
+h6 {
+  font-size: 20px;
+}
+a:link {
+  color: #1db09d;
+  text-decoration: none;
+}
+a:hover {
+  color: #00C060;
+  text-decoration: underline;
+}
+a:active {
+  color: #00C060;
+}
+a:visited {
+  color: #1db09d;
+}
+/* content */
+.content {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0px auto;
+}
+.title {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0px 20px 0px;
+}
+/* header */
+header {
+  top: 0px;
+  height: 88px;
+  position: fixed;
+  z-index: 1000;
+  background-color: #fff;
+  width: 100%;
+  border-top: 4px solid #03aaa2;
+}
+header .logo {
+  float: left;
+  padding-top: 25px;
+}
+header .email {
+  float: right;
+  padding: 30px 30px 0 0;
+}
+header .email img {
+  display: inline-block;
+  margin-bottom: -5px;
+  padding-right: 10px;
+  width: 34px;
+  height: 23px;
+}
+/* intro */
+.intro {
+  margin-top: 88px;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-image: url(images/bg.jpg);
+  background-repeat: repeat-y;
+  background-position: 0px -50px;
+}
+.intro img {
+  position: absolute;
+  bottom: 0px;
+  left: 20%;
+}
+.forhire {
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 3px solid #ffffff;
+  padding: 40px 45px;
+  text-align: center;
+}
+/* skills */
+.skills {
+  padding: 0px 0px 0px 0px;
+}
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: #eaeaea;
+  font-size: 0px;
+  margin: 0 0 20px 0;
+}
+/* bio */
+.bio {
+  font-family: 'Jaldi', sans-serif;
+  font-size: 24px;
+  padding: 50px 0px 50px 0px;
+}
+.bio .content {
+  max-width: 1030px;
+}
+.bio p {
+  padding-bottom: 30px;
+}
+/* contact */
+.contact {
+  color: #ffffff;
+  position: relative;
+  width: 100%;
+  padding: 40px 0px;
+  background-image: url(images/bg.jpg);
+  background-repeat: repeat-y;
+}
+.contact .content {
+  text-align: center;
+}
+.contact h4 {
+  padding-bottom: 10px;
+}
+.contact a {
+  font-family: 'Jaldi', sans-serif;
+  font-size: 32px;
+}
+.contact a:link {
+  color: #c0ff00;
+}
+.contact a:hover {
+  color: #c0ff00;
+}
+.contact a:active {
+  color: #c0ff00;
+}
+.contact a:visited {
+  color: #c0ff00;
+}
+/* graph */
+.graph {
+  margin-bottom: 50px;
+}
+.graph div {
+  box-sizing: border-box;
+}
+.graph .item {
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+}
+.graph .label {
+  float: left;
+  width: 200px;
+  text-align: right;
+  font-size: 17px;
+  padding: 7px 15px 0 0;
+}
+.graph .label.large {
+  padding: 3px 15px 0 0;
+}
+.graph .bar {
+  float: left;
+  width: calc(100% - 200px);
+}
+.graph .bar > div {
+  float: left;
+  padding: 7px;
+  color: #fff;
+}
+.graph .bar:after,
+.graph .item:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+}
+.graph .item .label.large {
+  font-size: 22px;
+}
+.graph .item .bar > div {
+  text-overflow: hidden;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.graph > h5 {
+  padding: 40px 0 10px 0;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* graph for Visual Studio (VS) */
+.graph .item.vs .color_1 {
+  background-color: #02a855;
+}
+.graph .item.vs .color_2 {
+  background-color: #01964b;
+}
+.graph .item.vs .bar_0 {
+  width: calc(10%);
+}
+.graph .item.vs .bar_1 {
+  width: calc(15%);
+}
+.graph .item.vs .bar_2 {
+  width: calc(20%);
+}
+.graph .item.vs .bar_3 {
+  width: calc(15%);
+}
+.graph .item.vs .bar_4 {
+  width: calc(15%);
+}
+.graph .item.vs .bar_5 {
+  width: calc(10%);
+}
+.graph .item.vs .bar_6 {
+  width: calc(5%);
+}
+/* graph for Visual Studio Code */
+.graph .item.vscode .color_1 {
+  background-color: #02a855;
+}
+.graph .item.vscode .color_2 {
+  background-color: #01964b;
+}
+.graph .item.vscode .bar_0 {
+  width: calc(75%);
+}
+.graph .item.vscode .bar_1 {
+  width: calc(15%);
+}
+/* graph for Webforms */
+.graph .item.webforms .color_1 {
+  background-color: #02a8a0;
+}
+.graph .item.webforms .color_2 {
+  background-color: #019696;
+}
+.graph .item.webforms .bar_0 {
+  width: calc(30%);
+}
+.graph .item.webforms .bar_1 {
+  width: calc(10%);
+}
+.graph .item.webforms .bar_2 {
+  width: calc(10%);
+}
+.graph .item.webforms .bar_3 {
+  width: calc(30%);
+}
+/* graph for MVC */
+.graph .item.vsmvc .color_1 {
+  background-color: #02a8a0;
+}
+.graph .item.vsmvc .color_2 {
+  background-color: #019696;
+}
+.graph .item.vsmvc .bar_0 {
+  width: calc(75%);
+}
+.graph .item.vsmvc .bar_1 {
+  width: calc(10%);
+}
+.graph .item.vsmvc .bar_2 {
+  width: calc(5%);
+}
+/* graph for LINQ */
+.graph .item.linq .color_1 {
+  background-color: #02a8a0;
+}
+.graph .item.linq .color_2 {
+  background-color: #019696;
+}
+.graph .item.linq .bar_0 {
+  width: calc(45%);
+}
+.graph .item.linq .bar_1 {
+  width: calc(45%);
+}
+/* graph for C# */
+.graph .item.csharp .color_1 {
+  background-color: #02a8a0;
+}
+.graph .item.csharp .color_2 {
+  background-color: #019696;
+}
+.graph .item.csharp .bar_0 {
+  width: calc(70%);
+}
+.graph .item.csharp .bar_1 {
+  width: calc(20%);
+}
+/* graph for VB.net */
+.graph .item.vbnet .color_1 {
+  background-color: #02a8a0;
+}
+.graph .item.vbnet .color_2 {
+  background-color: #019696;
+}
+.graph .item.vbnet .bar_0 {
+  width: calc(10%);
+}
+.graph .item.vbnet .bar_1 {
+  width: calc(20%);
+}
+.graph .item.vbnet .bar_2 {
+  width: calc(10%);
+}
+.graph .item.vbnet .bar_3 {
+  width: calc(10%);
+}
+.graph .item.vbnet .bar_4 {
+  width: calc(20%);
+}
+/* graph for ASP.net */
+.graph .item.aspnet .color_1 {
+  background-color: #02a8a0;
+}
+.graph .item.aspnet .color_2 {
+  background-color: #019696;
+}
+.graph .item.aspnet .bar_0 {
+  width: calc(30%);
+}
+.graph .item.aspnet .bar_1 {
+  width: calc(10%);
+}
+.graph .item.aspnet .bar_2 {
+  width: calc(10%);
+}
+.graph .item.aspnet .bar_3 {
+  width: calc(30%);
+}
+.graph .item.aspnet .bar_4 {
+  width: calc(10%);
+}
+/* graph for Visual Basic (VB) */
+.graph .item.vb .color_1 {
+  background-color: #02a8a0;
+}
+.graph .item.vb .color_2 {
+  background-color: #019696;
+}
+.graph .item.vb .bar_1 {
+  width: calc(5%);
+}
+.graph .item.vb .bar_2 {
+  width: calc(10%);
+}
+/* graph for SQL Server */
+.graph .item.mssql .color_1 {
+  background-color: #0273a8;
+}
+.graph .item.mssql .color_2 {
+  background-color: #006696;
+}
+.graph .item.mssql .bar_0 {
+  width: calc(10%);
+}
+.graph .item.mssql .bar_1 {
+  width: calc(15%);
+}
+.graph .item.mssql .bar_2 {
+  width: calc(20%);
+}
+.graph .item.mssql .bar_3 {
+  width: calc(15%);
+}
+.graph .item.mssql .bar_4 {
+  width: calc(20%);
+}
+.graph .item.mssql .bar_5 {
+  width: calc(5%);
+}
+.graph .item.mssql .bar_6 {
+  width: calc(5%);
+}
+/* graph for PHP */
+.graph .item.php .color_1 {
+  background-color: #02a8a0;
+}
+.graph .item.php .color_2 {
+  background-color: #019696;
+}
+.graph .item.php .bar_0 {
+  width: calc(40%);
+}
+.graph .item.php .bar_1 {
+  width: calc(15%);
+}
+.graph .item.php .bar_2 {
+  width: calc(15%);
+}
+.graph .item.php .bar_3 {
+  width: calc(5%);
+}
+.graph .item.php .bar_4 {
+  width: calc(10%);
+}
+/* graph for MySql */
+.graph .item.mysql .color_1 {
+  background-color: #0273a8;
+}
+.graph .item.mysql .color_2 {
+  background-color: #006696;
+}
+.graph .item.mysql .bar_0 {
+  width: calc(40%);
+}
+.graph .item.mysql .bar_1 {
+  width: calc(15%);
+}
+.graph .item.mysql .bar_2 {
+  width: calc(15%);
+}
+.graph .item.mysql .bar_3 {
+  width: calc(5%);
+}
+.graph .item.mysql .bar_4 {
+  width: calc(10%);
+}
+/* graph for Dapper */
+.graph .item.dapper .color_1 {
+  background-color: #02a8a0;
+}
+.graph .item.dapper .color_2 {
+  background-color: #019696;
+}
+.graph .item.dapper .bar_0 {
+  width: calc(85%);
+}
+.graph .item.dapper .bar_1 {
+  width: calc(5%);
+}
+/* graph for HTML */
+.graph .item.html .color_1 {
+  background-color: #51a800;
+}
+.graph .item.html .color_2 {
+  background-color: #479400;
+}
+.graph .item.html .bar_1 {
+  width: calc(25%);
+}
+.graph .item.html .bar_2 {
+  width: calc(35%);
+}
+.graph .item.html .bar_3 {
+  width: calc(30%);
+}
+/* graph for CSS */
+.graph .item.css .color_1 {
+  background-color: #8abd00;
+}
+.graph .item.css .color_2 {
+  background-color: #76a800;
+}
+.graph .item.css .bar_1 {
+  width: calc(25%);
+}
+.graph .item.css .bar_2 {
+  width: calc(35%);
+}
+.graph .item.css .bar_3 {
+  width: calc(30%);
+}
+/* graph for LESS */
+.graph .item.less .color_1 {
+  background-color: #8abd00;
+}
+.graph .item.less .color_2 {
+  background-color: #76a800;
+}
+.graph .item.less .bar_0 {
+  width: calc(60%);
+}
+.graph .item.less .bar_1 {
+  width: calc(30%);
+}
+/* graph for Bootstrap */
+.graph .item.bootstrap .color_1 {
+  background-color: #8abd00;
+}
+.graph .item.bootstrap .color_2 {
+  background-color: #76a800;
+}
+.graph .item.bootstrap .bar_0 {
+  width: calc(70%);
+}
+.graph .item.bootstrap .bar_1 {
+  width: calc(10%);
+}
+/* graph for Tapestry */
+.graph .item.tapestry .color_1 {
+  background-color: #8abd00;
+}
+.graph .item.tapestry .color_2 {
+  background-color: #76a800;
+}
+.graph .item.tapestry .bar_0 {
+  width: calc(80%);
+}
+.graph .item.tapestry .bar_1 {
+  width: calc(10%);
+}
+/* graph for Javascript */
+.graph .item.js .color_1 {
+  background-color: #00bd6e;
+}
+.graph .item.js .color_2 {
+  background-color: #00a05b;
+}
+.graph .item.js .bar_1 {
+  width: calc(50%);
+}
+.graph .item.js .bar_2 {
+  width: calc(35%);
+}
+.graph .item.js .bar_3 {
+  width: calc(5%);
+}
+/* graph for jQuery */
+.graph .item.jquery .color_1 {
+  background-color: #00bd6e;
+}
+.graph .item.jquery .color_2 {
+  background-color: #00a05b;
+}
+.graph .item.jquery .bar_0 {
+  width: calc(25%);
+}
+.graph .item.jquery .bar_1 {
+  width: calc(55%);
+}
+/* graph for Selector.js */
+.graph .item.selectorjs .color_1 {
+  background-color: #00bd6e;
+}
+.graph .item.selectorjs .color_2 {
+  background-color: #00a05b;
+}
+.graph .item.selectorjs .bar_0 {
+  width: calc(80%);
+}
+.graph .item.selectorjs .bar_1 {
+  width: calc(10%);
+}
+/* graph for Amazon AWS */
+.graph .item.amazonaws .color_1 {
+  background-color: #00afaf;
+}
+.graph .item.amazonaws .color_2 {
+  background-color: #019999;
+}
+.graph .item.amazonaws .bar_0 {
+  width: calc(80%);
+}
+.graph .item.amazonaws .bar_1 {
+  width: calc(10%);
+}
+/* graph for EC2 (Amazon AWS) */
+.graph .item.aws_ec2 .color_1 {
+  background-color: #00afaf;
+}
+.graph .item.aws_ec2 .color_2 {
+  background-color: #019999;
+}
+.graph .item.aws_ec2 .bar_0 {
+  width: calc(80%);
+}
+.graph .item.aws_ec2 .bar_1 {
+  width: calc(10%);
+}
+/* graph for RDS (Amazon AWS) */
+.graph .item.aws_rds .color_1 {
+  background-color: #00afaf;
+}
+.graph .item.aws_rds .color_2 {
+  background-color: #019999;
+}
+.graph .item.aws_rds .bar_0 {
+  width: calc(80%);
+}
+.graph .item.aws_rds .bar_1 {
+  width: calc(5%);
+}
+/* graph for S3 (Amazon AWS) */
+.graph .item.aws_s3 .color_1 {
+  background-color: #00afaf;
+}
+.graph .item.aws_s3 .color_2 {
+  background-color: #019999;
+}
+.graph .item.aws_s3 .bar_0 {
+  width: calc(80%);
+}
+.graph .item.aws_s3 .bar_1 {
+  width: calc(10%);
+}
+/* graph for Cloudfront (Amazon AWS) */
+.graph .item.aws_cloudfront .color_1 {
+  background-color: #00afaf;
+}
+.graph .item.aws_cloudfront .color_2 {
+  background-color: #019999;
+}
+.graph .item.aws_cloudfront .bar_0 {
+  width: calc(80%);
+}
+.graph .item.aws_cloudfront .bar_1 {
+  width: calc(10%);
+}
+/* graph for Route 53 (Amazon AWS) */
+.graph .item.aws_route53 .color_1 {
+  background-color: #00afaf;
+}
+.graph .item.aws_route53 .color_2 {
+  background-color: #019999;
+}
+.graph .item.aws_route53 .bar_0 {
+  width: calc(80%);
+}
+.graph .item.aws_route53 .bar_1 {
+  width: calc(10%);
+}
+/* graph for Azure */
+.graph .item.azure .color_1 {
+  background-color: #00afaf;
+}
+.graph .item.azure .color_2 {
+  background-color: #019999;
+}
+.graph .item.azure .bar_0 {
+  width: calc(80%);
+}
+.graph .item.azure .bar_1 {
+  width: calc(5%);
+}
+/* graph for Git */
+.graph .item.git .color_1 {
+  background-color: #464646;
+}
+.graph .item.git .color_2 {
+  background-color: #292929;
+}
+.graph .item.git .bar_0 {
+  width: calc(70%);
+}
+.graph .item.git .bar_1 {
+  width: calc(20%);
+}
+/* graph for Gulp */
+.graph .item.gulp .color_1 {
+  background-color: #292929;
+}
+.graph .item.gulp .color_2 {
+  background-color: #464646;
+}
+.graph .item.gulp .bar_0 {
+  width: calc(70%);
+}
+.graph .item.gulp .bar_1 {
+  width: calc(20%);
+}
+/* graph for Vagrant */
+.graph .item.vagrant .color_1 {
+  background-color: #464646;
+}
+.graph .item.vagrant .color_2 {
+  background-color: #292929;
+}
+.graph .item.vagrant .bar_0 {
+  width: calc(60%);
+}
+.graph .item.vagrant .bar_1 {
+  width: calc(25%);
+}
+/* graph for Photoshop (PS) */
+.graph .item.ps .color_1 {
+  background-color: #0184f0;
+}
+.graph .item.ps .color_2 {
+  background-color: #0073d1;
+}
+.graph .item.ps .bar_1 {
+  width: calc(25%);
+}
+.graph .item.ps .bar_2 {
+  width: calc(20%);
+}
+.graph .item.ps .bar_3 {
+  width: calc(35%);
+}
+.graph .item.ps .bar_4 {
+  width: calc(10%);
+}
+/* graph for Flash (FL) */
+.graph .item.fl .color_1 {
+  background-color: #da3300;
+}
+.graph .item.fl .color_2 {
+  background-color: #c02d00;
+}
+.graph .item.fl .bar_1 {
+  width: calc(25%);
+}
+.graph .item.fl .bar_2 {
+  width: calc(20%);
+}
+.graph .item.fl .bar_3 {
+  width: calc(35%);
+}
+.graph .item.fl .bar_4 {
+  width: calc(10%);
+}
+/* graph for Krita */
+.graph .item.krita .color_1 {
+  background-color: #f56e00;
+}
+.graph .item.krita .color_2 {
+  background-color: #fd5bf5;
+}
+.graph .item.krita .bar_0 {
+  width: calc(70%);
+}
+.graph .item.krita .bar_1 {
+  width: calc(20%);
+}
+/* graph for Concrete5 */
+.graph .item.c5 .color_1 {
+  background-color: #008fd1;
+}
+.graph .item.c5 .color_2 {
+  background-color: #007cb1;
+}
+.graph .item.c5 .bar_0 {
+  width: calc(65%);
+}
+.graph .item.c5 .bar_1 {
+  width: calc(10%);
+}
+/* graph for Magento */
+.graph .item.magento .color_1 {
+  background-color: #008fd1;
+}
+.graph .item.magento .color_2 {
+  background-color: #007cb1;
+}
+.graph .item.magento .bar_0 {
+  width: calc(75%);
+}
+.graph .item.magento .bar_1 {
+  width: calc(5%);
+}
+.graph .item.magento .bar_2 {
+  width: calc(5%);
+}
+/* graph for Rennder */
+.graph .item.rennder .color_1 {
+  background-color: #008fd1;
+}
+.graph .item.rennder .color_2 {
+  background-color: #007cb1;
+}
+.graph .item.rennder .bar_0 {
+  width: calc(40%);
+}
+.graph .item.rennder .bar_1 {
+  width: calc(35%);
+}
+/* graph for Websilk */
+.graph .item.websilk .color_1 {
+  background-color: #008fd1;
+}
+.graph .item.websilk .color_2 {
+  background-color: #007cb1;
+}
+.graph .item.websilk .bar_0 {
+  width: calc(75%);
+}
+.graph .item.websilk .bar_1 {
+  width: calc(10%);
+}
+.graph .item.websilk .bar_2 {
+  width: calc(5%);
+}
+/* graph for React Native */
+.graph .item.reactnative .color_1 {
+  background-color: #00d1c0;
+}
+.graph .item.reactnative .color_2 {
+  background-color: #00bdad;
+}
+.graph .item.reactnative .bar_0 {
+  width: calc(85%);
+}
+.graph .item.reactnative .bar_1 {
+  width: calc(5%);
+}
+/* graph for Realm */
+.graph .item.realm .color_1 {
+  background-color: #00d1c0;
+}
+.graph .item.realm .color_2 {
+  background-color: #00bdad;
+}
+.graph .item.realm .bar_0 {
+  width: calc(85%);
+}
+.graph .item.realm .bar_1 {
+  width: calc(5%);
+}
+/* graph for Flutter */
+.graph .item.flutter .color_1 {
+  background-color: #00d1c0;
+}
+.graph .item.flutter .color_2 {
+  background-color: #00bdad;
+}
+.graph .item.flutter .bar_0 {
+  width: calc(85%);
+}
+.graph .item.flutter .bar_1 {
+  width: calc(5%);
+}
+/* graph for Agile */
+.graph .item.agile .color_1 {
+  background-color: #ff9100;
+}
+.graph .item.agile .color_2 {
+  background-color: #eb7e01;
+}
+.graph .item.agile .bar_0 {
+  width: calc(50%);
+}
+.graph .item.agile .bar_1 {
+  width: calc(5%);
+}
+.graph .item.agile .bar_2 {
+  width: calc(10%);
+}
+.graph .item.agile .bar_3 {
+  width: calc(25%);
+}
+/* graph for Scrum */
+.graph .item.scrum .color_1 {
+  background-color: #eb7e01;
+}
+.graph .item.scrum .color_2 {
+  background-color: #eb7e01;
+}
+.graph .item.scrum .bar_0 {
+  width: calc(50%);
+}
+.graph .item.scrum .bar_1 {
+  width: calc(5%);
+}
+.graph .item.scrum .bar_2 {
+  width: calc(15%);
+}
+.graph .item.scrum .bar_3 {
+  width: calc(20%);
+}
+/* graph for Sprint */
+.graph .item.sprint .color_1 {
+  background-color: #ff9100;
+}
+.graph .item.sprint .color_2 {
+  background-color: #eb7e01;
+}
+.graph .item.sprint .bar_0 {
+  width: calc(50%);
+}
+.graph .item.sprint .bar_1 {
+  width: calc(5%);
+}
+.graph .item.sprint .bar_2 {
+  width: calc(15%);
+}
+.graph .item.sprint .bar_3 {
+  width: calc(20%);
+}
+/* graph for Visual Studio Team Servies (VSTS) */
+.graph .item.vsts .color_1 {
+  background-color: #ff9100;
+}
+.graph .item.vsts .color_2 {
+  background-color: #eb7e01;
+}
+.graph .item.vsts .bar_0 {
+  width: calc(85%);
+}
+.graph .item.vsts .bar_1 {
+  width: calc(5%);
+}
+/* graph for Git (Agile) */
+.graph .item.git-agile .color_1 {
+  background-color: #eb7e01;
+}
+.graph .item.git-agile .color_2 {
+  background-color: #eb7e01;
+}
+/* graph for Trello */
+.graph .item.trello .color_1 {
+  background-color: #ff9100;
+}
+.graph .item.trello .color_2 {
+  background-color: #eb7e01;
+}
+.graph .item.trello .bar_0 {
+  width: calc(75%);
+}
+.graph .item.trello .bar_1 {
+  width: calc(15%);
+}
+/* graph for Slack */
+.graph .item.slack .color_1 {
+  background-color: #eb7e01;
+}
+.graph .item.slack .color_2 {
+  background-color: #eb7e01;
+}
+.graph .item.slack .bar_0 {
+  width: calc(80%);
+}
+.graph .item.slack .bar_1 {
+  width: calc(10%);
+}
+/* graph for Blender */
+.graph .item.blender .color_1 {
+  background-color: #7c7c7c;
+}
+.graph .item.blender .color_2 {
+  background-color: #6d6d6d;
+}
+.graph .item.blender .bar_0 {
+  width: calc(80%);
+}
+.graph .item.blender .bar_1 {
+  width: calc(5%);
+}
+/* graph for Unreal Engine 4 */
+.graph .item.ue4 .color_1 {
+  background-color: #7c7c7c;
+}
+.graph .item.ue4 .color_2 {
+  background-color: #6d6d6d;
+}
+.graph .item.ue4 .bar_0 {
+  width: calc(80%);
+}
+.graph .item.ue4 .bar_1 {
+  width: calc(5%);
+}
+/* graph for Cubase SX */
+.graph .item.cubase .color_1 {
+  background-color: #6700dd;
+}
+.graph .item.cubase .color_2 {
+  background-color: #5900c5;
+}
+.graph .item.cubase .bar_0 {
+  width: calc(10%);
+}
+.graph .item.cubase .bar_1 {
+  width: calc(5%);
+}
+.graph .item.cubase .bar_2 {
+  width: calc(5%);
+}
+.graph .item.cubase .bar_3 {
+  width: calc(10%);
+}
+.graph .item.cubase .bar_4 {
+  width: calc(15%);
+}
+/* graph for Reason */
+.graph .item.reason .color_1 {
+  background-color: #6700dd;
+}
+.graph .item.reason .color_2 {
+  background-color: #5900c5;
+}
+.graph .item.reason .bar_1 {
+  width: calc(15%);
+}
+.graph .item.reason .bar_2 {
+  width: calc(10%);
+}
+.graph .item.reason .bar_3 {
+  width: calc(15%);
+}
+.graph .item.reason .bar_4 {
+  width: calc(10%);
+}
+.graph .item.reason .bar_5 {
+  width: calc(15%);
+}
+/* graph for Bitwig */
+.graph .item.bitwig .color_1 {
+  background-color: #6700dd;
+}
+.graph .item.bitwig .color_2 {
+  background-color: #5900c5;
+}
+.graph .item.bitwig .bar_0 {
+  width: calc(70%);
+}
+.graph .item.bitwig .bar_1 {
+  width: calc(15%);
+}
+/* graph for Studio One */
+.graph .item.studio1 .color_1 {
+  background-color: #6700dd;
+}
+.graph .item.studio1 .color_2 {
+  background-color: #5900c5;
+}
+.graph .item.studio1 .bar_0 {
+  width: calc(85%);
+}
+.graph .item.studio1 .bar_1 {
+  width: calc(5%);
+}
+/* Projects */
+.project {
+  float: left;
+  width: 33%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.project::after {
+  content: " ";
+  clear: both;
+  display: block;
+  height: 0;
+  font-size: 0;
+}
+.project .logo {
+  text-align: center;
+  padding: 0 0 50px 0;
+}
+.project .logo img {
+  margin: 0 auto;
+  width: 80%;
+}
+.project .description {
+  font-size: 17px;
+  height: 100px;
+}
+.project .github {
+  float: right;
+}
+.project .github img {
+  display: inline-block;
+  position: relative;
+  top: 13px;
+  width: 50px;
+}
+.project .github span {
+  font-size: 20px;
+}
+.project.empty {
+  opacity: 0.15;
+}
+.contact {
+  clear: both;
+}
+.contact .note {
+  font-family: 'Jaldi', sans-serif;
+  width: calc(100% - 100px);
+  text-align: center;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 50px;
+}
+/* media queries */
+@media (max-width: 1480px) {
+  body {
+    overflow-x: hidden;
+  }
+  .content {
+    padding: 0px 60px 0 20px;
+  }
+  .forhire {
+    right: 110px;
+    top: 240px;
+  }
+}
+@media (max-width: 1200px) {
+  .intro img {
+    left: 0px;
+  }
+  .forhire {
+    top: 240px;
+  }
+}
+@media (max-width: 950px) {
+  .intro img {
+    left: 10%;
+  }
+  .forhire {
+    top: 280px;
+    right: 110px;
+  }
+  .forhire h1 {
+    font-size: 60px;
+  }
+  .forhire h4 {
+    font-size: 26px;
+  }
+  .project {
+    width: 50%;
+  }
+}
+@media (max-width: 850px) {
+  .forhire {
+    top: 280px;
+  }
+}
+@media (max-width: 660px) {
+  .forhire {
+    top: 200px;
+  }
+  .project {
+    width: 100%;
+  }
+}

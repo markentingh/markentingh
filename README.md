@@ -19,3 +19,6 @@ I'm currently working on various projects of my own, for the sake of my own sani
 There are many more projects that I'm working on at the moment, even a few that are private because I plan on monitizing them so that I don't have to rely on a day job any longer. Eventually I'll talk about those projects once they're released to the public. For now, if you'd like to get to know me, you can find me on **Discord** @ **polymath#3455**.
 
 Thank you for taking the time to read all this stuff and I hope we can talk in the near future if you're interested in picking my brain.
+
+Sincerely,
+Mark Entingh

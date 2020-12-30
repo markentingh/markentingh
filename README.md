@@ -20,6 +20,8 @@ There are many more projects that I'm working on at the moment, even a few that 
 
 You can sponsor me and my efforts [here](https://github.com/sponsors/Datasilk).
 
+Outside of software development, I like cross-country cycling, mountain biking, building pro racing drones with DJI Digital FPV Goggles, playing with my Nikon Z6, video game development (2D & 3D), PC VR racing games (Dirt 2.0, Assetto Corsa & Shutoko Revival Project, Project Cars 2) using GT3/Rally/F1 wheels, 7 speed shifter & hand break, music production (progressive deep house) using my Ableton Push 2 & Yamaha P71 88 key fully-weighted keyboard, classic console systems & games (Dragon Warrior IV, Secret of Evermore, Final Fantasy 5, 6, 7, 8, 9, Zelda series), space exploration, ancient civilization research... the list goes on.
+
 Thank you for taking the time to read all this stuff and I hope we can talk in the near future if you're interested in picking my brain.
 
 Sincerely,

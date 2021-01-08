@@ -101,6 +101,7 @@ input,
 select,
 textarea {
   font-family: 'Roboto', Arial, Helvetica, sans;
+  font-weight: 300;
 }
 /* fonts */
 h1,
@@ -109,7 +110,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
   line-height: 1.25;
 }
 h1 {
@@ -1171,6 +1171,9 @@ header .content h6 {
 .project .description {
   font-size: 17px;
   height: 110px;
+}
+.project .description p {
+  opacity: 0.6;
 }
 .project .github {
   float: right;

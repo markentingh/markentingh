@@ -10,10 +10,10 @@ embed, figure, figcaption, footer, header, hgroup, menu, nav, section, summary
 
 /* body */
 body{font-weight:400; color:#eee; background-color:#111;}
-body, h1, h2, h3, h4, h5, h6, span, input, select, textarea{font-family: 'Roboto', Arial, Helvetica, sans;}
+body, h1, h2, h3, h4, h5, h6, span, input, select, textarea{font-family: 'Roboto', Arial, Helvetica, sans; font-weight:300;}
 
 /* fonts */
-h1, h2, h3, h4, h5, h6{font-family: 'Roboto', sans-serif; line-height:1.25}
+h1, h2, h3, h4, h5, h6{line-height:1.25}
 h1{font-size: 82px;}
 h2{font-size: 56px;}
 h3{font-size: 48px;}
@@ -516,7 +516,9 @@ header{top:0px; z-index:1000; width:100%;
 .project::after{content:" ";clear:both;display:block;height:0;font-size:0;}
 .project .logo{text-align:center; padding:0 0 50px 0;}
 .project .logo img{margin:0 auto; width:80%;}
-.project .description{font-size:17px; height:110px;}
+.project .description{font-size:17px; height:110px;
+  p{opacity:0.6;}
+}
 .project .github{float:right;}
 .project .github img{display:inline-block; position:relative; top:13px; width:50px; padding-right:10px;}
 .project .github span{font-size:20px;}

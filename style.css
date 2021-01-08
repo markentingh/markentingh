@@ -100,8 +100,8 @@ summary {
 /* body */
 body {
   font-weight: 400;
-  color: #272727;
-  background-color: #ffffff;
+  color: #eee;
+  background-color: #111;
 }
 body,
 h1,
@@ -172,28 +172,30 @@ a:visited {
 }
 /* header */
 header {
-  position: fixed;
   top: 0px;
-  height: 500px;
   z-index: 1000;
   width: 100%;
+}
+header img.bg {
+  width: 100%;
+  position: relative;
+  bottom: 0;
 }
 header .intro {
   position: absolute;
   display: table;
   width: 100%;
-  height: 100%;
   color: #fff;
   z-index: 1000;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  top: 230px;
+  left: -100px;
+  zoom: 0.7;
   text-align: center;
 }
 header .content {
   display: table-cell;
   vertical-align: middle;
+  zoom: 1;
 }
 header .content h1 {
   padding-bottom: 10px;
@@ -204,25 +206,14 @@ header .content h4 {
 header .content h6 {
   opacity: 0.6;
 }
-header .profile-pic {
-  position: absolute;
-  bottom: -85px;
-  width: 100%;
-  text-align: center;
-  z-index: 1001;
-}
-header .profile-pic img {
-  width: 150px;
-  margin: 0 auto;
-}
 /* skills */
 .skills {
-  padding-top: 550px;
+  padding-top: 0px;
 }
 .divider {
   width: 100%;
   height: 2px;
-  background-color: #eaeaea;
+  background-color: #333;
   font-size: 0px;
   margin: 0 0 20px 0;
 }
@@ -336,7 +327,7 @@ header .profile-pic img {
 }
 .graph .item {
   width: 100%;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #333;
 }
 .graph .label {
   float: left;
@@ -355,7 +346,7 @@ header .profile-pic img {
 .graph .bar > div {
   float: left;
   padding: 7px;
-  color: #fff;
+  color: #eee;
 }
 .graph .bar:after,
 .graph .item:after {

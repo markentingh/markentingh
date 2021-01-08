@@ -155,12 +155,12 @@ switch(bgtype){
 }
 
 //generate header background
-generateBackground(document.getElementsByTagName('header')[0], {
-    colorRange: colorRange,
-    background: bg,
-    elements:40,
-    distributedColumns: 5
-});
+//generateBackground(document.getElementsByTagName('header')[0], {
+//    colorRange: colorRange,
+//    background: bg,
+//    elements:40,
+//    distributedColumns: 5
+//});
 
 //generate footer background
 generateBackground(document.getElementsByClassName('contact')[0], {
@@ -169,68 +169,3 @@ generateBackground(document.getElementsByClassName('contact')[0], {
     elements:30,
     distributedColumns: 5
 });
-
-(function(){
-    //create window scroll event used to shrink header on scroll
-    let tick = false;
-    const header = document.getElementsByTagName('header')[0];
-    const content = document.querySelector('header .content');
-    const h6 = document.querySelector('header .content h6');
-    const h4 = document.querySelector('header .content h4');
-    const profile = document.querySelector('header .profile-pic');
-    const pic = document.querySelector('header .profile-pic img');
-    const headHeight = 500; //height of header area
-    const shrinkStart = 60; //scroll start to shrink header
-    const shrinkEnd = 100; //scroll end where header is completely shrunken
-    const picSize = 175; //profile pic default width
-    const picStart = 150; //profile pic scroll start
-    const picLength = 300; //profile pic total scroll area length
-    const picEnd = picStart + picLength; //profile pic scroll end
-    const picBottom = 85;
-    
-    window.addEventListener('scroll', scrollWindow);
-    window.addEventListener('resize', scrollWindow);
-    
-    function scrollWindow(init){
-        let y = window.scrollY;
-        if(!tick){
-            window.requestAnimationFrame(function(){
-                //shrink header
-                let maxy = (y < (headHeight - shrinkEnd) ? y : (headHeight - shrinkEnd)); //used to set max value if page is refreshed after scrolling down
-                header.style.height = (headHeight - maxy) + 'px';
-
-                //shrink text
-                let zoom = 1 - (0.5 * (1 / ((headHeight - shrinkEnd) - shrinkStart)) * (maxy - shrinkStart));
-                if(zoom > 1){zoom = 1;}
-                content.style.zoom = zoom;
-                
-                //fade out text
-                if(y <= shrinkStart || init == true){
-                    maxy = (y < shrinkStart ? y : shrinkStart);
-                    h6.style.opacity = 0.6 - (1 / shrinkStart) * (maxy);
-                    h4.style.paddingBottom = (50 - (50 / shrinkStart) * (maxy)) + 'px';
-                }else{
-                    h6.style.opacity = 0;
-                    h4.style.paddingBottom = '0px';
-                }
-
-                //shrink profile pic
-                if(y < 150){
-                    profile.style.bottom = (-1 * picBottom) + 'px';
-                    pic.style.width = picSize + 'px';
-                }else if(y >= picStart && y <= picEnd){
-                    maxy = (y < picEnd ? y : picEnd);
-                    pic.style.width = ((picSize / picLength) * (picEnd - maxy)) + 'px';
-                    profile.style.bottom = (-1 * ((picEnd - maxy) / (picLength / picBottom))) + 'px';
-                }else{
-                    pic.style.width = '0px';
-                }
-                tick = false;
-            });
-        }
-        tick = true;
-    }
-
-    scrollWindow(true);
-    setTimeout(() => scrollWindow(true), 200);
-})();

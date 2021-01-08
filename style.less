@@ -55,7 +55,7 @@ embed, figure, figcaption, footer, header, hgroup, menu, nav, section, summary
 {margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline;}
 
 /* body */
-body{font-weight:400; color:#272727; background-color:#ffffff;}
+body{font-weight:400; color:#eee; background-color:#111;}
 body, h1, h2, h3, h4, h5, h6, span, input, select, textarea{font-family: Open Sans, Arial, Helvetica, sans;}
 
 /* fonts */
@@ -78,22 +78,20 @@ a:visited{color:#6666ff; }
 
 /* header */
 @header-height:500px;
-header{position:fixed; top:0px; height:@header-height; z-index:1000; width:100%;
-  .intro{position:absolute; display:table; width:100%; height:100%; color:#fff; z-index:1000; top:0; right:0; bottom:0; left:0; text-align:center;}
-  .content{display:table-cell; vertical-align:middle;
+header{top:0px; z-index:1000; width:100%;
+  img.bg{width:100%; position:relative; bottom:0;}
+  .intro{position:absolute; display:table; width:100%; color:#fff; z-index:1000; top:230px; left:-100px; zoom:0.7; text-align:center;}
+  .content{display:table-cell; vertical-align:middle; zoom:1;
     h1{padding-bottom:10px;}
     h4{padding-bottom:50px;}
     h6{opacity:0.6;}
   }
-  .profile-pic{position:absolute; bottom:-85px; width:100%; text-align:center; z-index:1001;
-    img{width:150px; margin:0 auto;}
-  }
 }
 
 /* skills */
-.skills{padding-top:@header-height + 50;}
+.skills{padding-top:0px;}
 
-.divider{width:100%; height:2px; background-color:#eaeaea; font-size:0px; margin:0 0 20px 0;}
+.divider{width:100%; height:2px; background-color:#333; font-size:0px; margin:0 0 20px 0;}
 
 /* bio */
 .bio{font-family: 'Jaldi', sans-serif; font-size:24px; padding:50px 0px 50px 0px}
@@ -116,11 +114,11 @@ header{position:fixed; top:0px; height:@header-height; z-index:1000; width:100%;
 @years:23; // 2000 - 2021
 .graph{margin-bottom:50px;
   div{box-sizing:border-box;}
-  .item{width:100%; border-bottom:1px solid #e0e0e0;}
+  .item{width:100%; border-bottom:1px solid #333;}
   .label{float:left; width:200px; text-align:right; font-size:17px; padding:7px 15px 0 0;}
   .label.large{padding:3px 15px 0 0;}
   .bar{float:left; width:~"calc(100% - 200px)";}
-  .bar > div{float:left; padding:7px; color:#fff;}
+  .bar > div{float:left; padding:7px; color:#eee;}
   .bar:after, 
   .item:after{content:""; clear:both; display:block;height:0;}
   .item .label.large{font-size:22px;}

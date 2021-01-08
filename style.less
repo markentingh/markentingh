@@ -144,7 +144,8 @@ header{top:0px; z-index:1000; width:100%;
   .item.aspnet .bar_1{width:calc(100% / @years * 2);} //2.0 (2006 - 2007)
   .item.aspnet .bar_2{width:calc(100% / @years * 2);} //3.5 (2008 - 2009)
   .item.aspnet .bar_3{width:calc(100% / @years * 6);} //4.5 (2010 - 2015)
-  .item.aspnet .bar_4{width:calc(100% / @years * 6);} //Core (2016 - 2021)
+  .item.aspnet .bar_4{width:calc(100% / @years * 5);} //Core (2016 - 2020)
+  .item.aspnet .bar_5{width:calc(100% / @years * 1);} //Core (2021)
 
   /* graph for Visual Basic (VB) */
   .item.vb .color_1{background-color:#02A8A0}
@@ -540,5 +541,8 @@ header{top:0px; z-index:1000; width:100%;
 }
 
 @media (max-width: 660px){
+  header{
+    .intro{top:170px; left:-130px; zoom:0.5;}
+  }
   .project{width:100%;}
 }

@@ -502,7 +502,10 @@ header .content h6 {
   width: calc(100% / 23 * 6);
 }
 .graph .item.aspnet .bar_4 {
-  width: calc(100% / 23 * 6);
+  width: calc(100% / 23 * 5);
+}
+.graph .item.aspnet .bar_5 {
+  width: calc(100% / 23 * 1);
 }
 .graph .item.vb .color_1 {
   background-color: #02A8A0;
@@ -1219,6 +1222,11 @@ header .content h6 {
   }
 }
 @media (max-width: 660px) {
+  header .intro {
+    top: 170px;
+    left: -130px;
+    zoom: 0.5;
+  }
   .project {
     width: 100%;
   }

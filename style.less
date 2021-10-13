@@ -27,18 +27,18 @@ a:active{color:#894aff; }
 a:visited{color:#6666ff; }
 
 /* content */
-.content{position:relative; width:100%; max-width:1400px; margin:0px auto;}
+.content{position:absolute; right:50px; text-align:left;}
 .title{width:100%; text-align:center; padding:50px 0px 20px 0px;}
 
 /* header */
 @header-height:500px;
-header{top:0px; z-index:1000; width:100%;
+header{top:0px; z-index:1000; width:100%; overflow:hidden;
   img.bg{width:100%; position:relative; bottom:0;}
   .intro{position:absolute; display:table; width:100%; color:#fff; z-index:1000; top:230px; left:-100px; zoom:0.7; text-align:center;}
   .content{display:table-cell; vertical-align:middle; zoom:1;
-    h1{font-size:40px; font-weight:300; padding-bottom:10px;}
-    h4{font-size:25px; font-weight:300; padding-bottom:10px;}
-    h6{font-size:18px; font-weight:300; opacity:0.6;}
+    h1{font-size:40px; font-weight:300; padding-bottom:10px; color:#53dc90;}
+    h4{font-size:25px; font-weight:300; padding-bottom:10px; color:#3db7a1;}
+    h6{font-size:18px; font-weight:300; opacity:0.6; color:#00ffad; max-width:290px;}
   }
 }
 
@@ -513,36 +513,79 @@ header{top:0px; z-index:1000; width:100%;
 }
 
 /* Projects */
-.project{float:left; width:25%; padding:30px 30px 60px 30px; box-sizing:border-box;}
-.project::after{content:" ";clear:both;display:block;height:0;font-size:0;}
-.project .logo{text-align:center; padding:0 0 50px 0;}
-.project .logo img{margin:0 auto; width:80%;}
-.project .description{font-size:17px; height:110px;
-  p{opacity:0.6;}
+.projects{position:absolute; top:50px; left:50px; width:44%; max-width:800px;
+  & > .title{display:none;}
+  .sidebar{float:left; width:250px;
+    ul{list-style:none; width:100%;}
+    li{ text-align:left; margin:5px 0; padding:5px 20px;
+      img{width:100%;}
+      &:hover{background-color:rgba(0, 0, 0, 0.5);}
+    }
+    li.tab-saber.selected{background-color:rgba(0, 41, 134, 0.7);}
+    li.tab-kandu.selected{background-color:rgba(0, 56, 140, 0.7);}
+    li.tab-legendary.selected{background-color:rgba(30, 66, 26, 0.7);}
+    li.tab-datasilk.selected{background-color:rgba(57, 4, 142, 0.7);}
+    li.tab-collector.selected{background-color:rgba(62, 62, 62, 0.7);}
+    li.tab-dedicate.selected{background-color:rgba(57, 4, 142, 0.7);}
+  }
+  .slideshow{float:right; position:relative; width:~"calc(100% - 250px)"; padding-left:50px; box-sizing:border-box;
+    &:after{content:''; clear:both; display:block; height:0px;}
+  }
+  &:after{content:''; clear:both; display:block; height:0px;}
 }
-.project .github{float:right;}
-.project .github img{display:inline-block; position:relative; top:13px; width:50px; padding-right:10px;}
-.project .github span{font-size:20px;}
+.project{position:absolute; top:-300px; opacity:0; transition: top .33s ease-out, opacity .33s ease-out;  box-sizing: border-box;
+  .logo{text-align:left; padding:0 0 50px 0;}
+  .logo img{margin:0 auto; width:100%;}
+  .description{font-size:17px; min-height:110px;
+    p{opacity:0.6;}
+  }
+  .github{float:right;}
+  .github img{display:inline-block; position:relative; top:13px; width:50px; padding-right:10px;}
+  .github span{font-size:20px;}
 
-.project.empty{opacity:0.25;}
-
+  &.empty{opacity:0.25;}
+  &.slide.in{top:0; opacity:1;}
+  &.slide.out{top:300px; opacity:0;}
+  &.reset{transition:none; top:-300px;}
+}
+  
 .contact{clear:both;}
 .contact .note{width:100%; box-sizing:border-box; text-align:center; font-size:15px; padding:50px;}
 
 /* media queries */
-@media (max-width: 1480px){
-  body{overflow-x:hidden;}
-  .content{padding:0px 60px 0 20px;}
-  .project{width:33%;}
+@media (min-width: 1950px){
+  .projects{left:10%;}
+}
+@media (min-width: 1600px){
+  .projects{top:200px;}
 }
 
-@media (max-width: 950px){
-  .project{width:50%;}
+@media (max-width: 1480px){
+  body{overflow-x:hidden;}
+}
+
+@media (max-width: 1330px){
+  header .intro .content{right:-20px;}
+}
+
+@media (max-width: 1250px){
+  header .intro .content{right:auto; left:30%;}
+  .projects{left:0px; top:auto; width:100%; margin:0 auto; position:relative; padding:20px 20px 50px 20px; box-sizing:border-box;}
+}
+
+@media (max-width: 700px){
+  .projects{
+    .sidebar{width:175px;}
+    .slideshow{width:~"calc(100% - 175px)"; padding-left:10px;}
+  }
 }
 
 @media (max-width: 660px){
   header{
     .intro{top:170px; left:-130px; zoom:0.5;}
   }
-  .project{width:100%;}
+}
+
+@media (max-width: 430px){
+  .project .github span{font-size:16px;}
 }

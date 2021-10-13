@@ -169,3 +169,37 @@ generateBackground(document.getElementsByClassName('contact')[0], {
     elements:30,
     distributedColumns: 5
 });
+
+var listItems = document.querySelectorAll('.projects .sidebar li');
+
+//slideshow
+function slide(id){
+    var oldelem = document.getElementsByClassName('project slide in');
+    var elem = document.getElementsByClassName('project ' + id)[0];
+    if(oldelem.length > 0){
+        oldelem = oldelem[0];
+        oldelem.classList.remove('in');
+        oldelem.classList.add('out');
+        setTimeout(() => {
+            if(oldelem.classList.contains('out')){
+                oldelem.classList.remove('slide', 'out');
+                oldelem.classList.add('reset');
+                oldelem.style.display = 'none';
+                setTimeout(() => {oldelem.classList.remove('reset');}, 50);
+            }
+        }, 1000);
+    }
+    elem.classList.remove('out');
+    elem.classList.add('reset');
+    elem.style.display = 'block';
+    setTimeout(() => {
+        elem.classList.remove('reset')
+        elem.classList.add('slide', 'in');
+    }, 10);
+    listItems.forEach(a => {
+        a.classList.remove('selected');
+    });
+    document.getElementsByClassName('tab-' + id)[0].classList.add('selected');
+}
+
+slide('saber');
